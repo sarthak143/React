@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function TextForm() {
 
-    const [Text, setText] = useState('efew');
+    const [Text, setText] = useState('please enter text here');
 
     function OnChangeHandler(event) {
         setText(event.target.value);
