@@ -37,7 +37,7 @@ function ContentPage() {
               aria-expanded="false"
             >
               <img
-                src="images/flags/us.jpg"
+                src="assets/images/flags/us.jpg"
                 alt="user-image"
                 className="me-0 me-sm-1"
                 height="12"
@@ -51,7 +51,7 @@ function ContentPage() {
               {/* <!-- item--> */}
               <a href="/" className="dropdown-item notify-item">
                 <img
-                  src="images/flags/germany.jpg"
+                  src="assets/images/flags/germany.jpg"
                   alt="user-image"
                   className="me-1"
                   height="12"
@@ -62,7 +62,7 @@ function ContentPage() {
               {/* <!-- item--> */}
               <a href="/" className="dropdown-item notify-item">
                 <img
-                  src="images/flags/italy.jpg"
+                  src="assets/images/flags/italy.jpg"
                   alt="user-image"
                   className="me-1"
                   height="12"
@@ -73,7 +73,7 @@ function ContentPage() {
               {/* <!-- item--> */}
               <a href="/" className="dropdown-item notify-item">
                 <img
-                  src="images/flags/spain.jpg"
+                  src="assets/images/flags/spain.jpg"
                   alt="user-image"
                   className="me-1"
                   height="12"
@@ -84,7 +84,7 @@ function ContentPage() {
               {/* <!-- item--> */}
               <a href="/" className="dropdown-item notify-item">
                 <img
-                  src="images/flags/russia.jpg"
+                  src="assets/images/flags/russia.jpg"
                   alt="user-image"
                   className="me-1"
                   height="12"
@@ -200,7 +200,7 @@ function ContentPage() {
                       <div className="flex-shrink-0">
                         <div className="notify-icon">
                           <img
-                            src="images/users/avatar-2.jpg"
+                            src="assets/images/users/avatar-2.jpg"
                             className="img-fluid rounded-circle"
                             alt=""
                           />
@@ -265,7 +265,7 @@ function ContentPage() {
                       <div className="flex-shrink-0">
                         <div className="notify-icon">
                           <img
-                            src="images/users/avatar-4.jpg"
+                            src="assets/images/users/avatar-4.jpg"
                             className="img-fluid rounded-circle"
                             alt=""
                           />
@@ -314,19 +314,22 @@ function ContentPage() {
                 <div className="row g-0">
                   <div className="col">
                     <a className="dropdown-icon-item" href="/">
-                      <img src="images/brands/slack.png" alt="slack" />
+                      <img src="assets/images/brands/slack.png" alt="slack" />
                       <span>Slack</span>
                     </a>
                   </div>
                   <div className="col">
                     <a className="dropdown-icon-item" href="/">
-                      <img src="images/brands/github.png" alt="Github" />
+                      <img src="assets/images/brands/github.png" alt="Github" />
                       <span>GitHub</span>
                     </a>
                   </div>
                   <div className="col">
                     <a className="dropdown-icon-item" href="/">
-                      <img src="images/brands/dribbble.png" alt="dribbble" />
+                      <img
+                        src="assets/images/brands/dribbble.png"
+                        alt="dribbble"
+                      />
                       <span>Dribbble</span>
                     </a>
                   </div>
@@ -334,19 +337,28 @@ function ContentPage() {
                 <div className="row g-0">
                   <div className="col">
                     <a className="dropdown-icon-item" href="/">
-                      <img src="images/brands/bitbucket.png" alt="bitbucket" />
+                      <img
+                        src="assets/images/brands/bitbucket.png"
+                        alt="bitbucket"
+                      />
                       <span>Bitbucket</span>
                     </a>
                   </div>
                   <div className="col">
                     <a className="dropdown-icon-item" href="/">
-                      <img src="images/brands/dropbox.png" alt="dropbox" />
+                      <img
+                        src="assets/images/brands/dropbox.png"
+                        alt="dropbox"
+                      />
                       <span>Dropbox</span>
                     </a>
                   </div>
                   <div className="col">
                     <a className="dropdown-icon-item" href="/">
-                      <img src="images/brands/g-suite.png" alt="G Suite" />
+                      <img
+                        src="assets/images/brands/g-suite.png"
+                        alt="G Suite"
+                      />
                       <span>G Suite</span>
                     </a>
                   </div>
@@ -373,7 +385,7 @@ function ContentPage() {
             >
               <span className="account-user-avatar">
                 <img
-                  src="images/users/avatar-1.jpg"
+                  src="assets/images/users/avatar-1.jpg"
                   alt="user-image"
                   className="rounded-circle"
                 />
@@ -480,7 +492,7 @@ function ContentPage() {
                 <div className="d-flex">
                   <img
                     className="d-flex me-2 rounded-circle"
-                    src="images/users/avatar-2.jpg"
+                    src="assets/images/users/avatar-2.jpg"
                     alt="Generic placeholder image"
                     height="32"
                   />
@@ -496,7 +508,7 @@ function ContentPage() {
                 <div className="d-flex">
                   <img
                     className="d-flex me-2 rounded-circle"
-                    src="images/users/avatar-5.jpg"
+                    src="assets/images/users/avatar-5.jpg"
                     alt="Generic placeholder image"
                     height="32"
                   />

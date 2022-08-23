@@ -11,20 +11,20 @@ function LeftMenu() {
         {/* <!-- LOGO --> */}
         <Link to="/" className="logo text-center logo-light">
           <span className="logo-lg">
-            <img src="/images/logo.png" alt="" height="16" />
+            <img src="/assets/images/logo.png" alt="" height="16" />
           </span>
           <span className="logo-sm">
-            <img src="images/logo_sm.png" alt="" height="16" />
+            <img src="assets/images/logo_sm.png" alt="" height="16" />
           </span>
         </Link>
 
         {/* <!-- LOGO --> */}
         <Link to="/" className="logo text-center logo-dark">
           <span className="logo-lg">
-            <img src="images/logo-dark.png" alt="" height="16" />
+            <img src="assets/images/logo-dark.png" alt="" height="16" />
           </span>
           <span className="logo-sm">
-            <img src="images/logo_sm_dark.png" alt="" height="16" />
+            <img src="assets/images/logo_sm_dark.png" alt="" height="16" />
           </span>
         </Link>
 
@@ -850,7 +850,7 @@ function LeftMenu() {
               <i className="mdi mdi-close"></i>
             </Link>
             <img
-              src="../assets/images/help-icon.svg"
+              src="assets/images/help-icon.svg"
               height="90"
               alt="Helper Icon Image"
             />
