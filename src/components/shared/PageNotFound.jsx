@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import { Link } from "react-router-dom";
 function PageNotFound() {
   return (
-    <div class="content">
+    <div className="content">
       {/* Start Content*/}
       <div className="container-fluid">
         {/* start page title */}
@@ -31,7 +30,7 @@ function PageNotFound() {
               <img
                 src="assets/images/file-searching.svg"
                 height={90}
-                alt="File not found Image"
+                alt="File not found "
               />
               <h1 className="text-error mt-4">404</h1>
               <h4 className="text-uppercase text-danger mt-3">

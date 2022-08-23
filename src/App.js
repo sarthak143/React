@@ -5,6 +5,7 @@ import PageNotFound from './components/shared/PageNotFound'
 import LeftMenu from './components/shared/LeftMenu'
 import RightContent from './components/shared/RightContent'
 import Zomato from './components/zomato/Zomato'
+import Navbar from './components/shared/Navbar'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div className="wrapper">
         <LeftMenu />
         <RightContent>
+          <Navbar />
           <Routes>
 
             <Route

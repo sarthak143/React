@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+import { Link } from "react-router-dom";
 function ContentPage() {
   return (
     <div className="content">
@@ -6,16 +7,16 @@ function ContentPage() {
       <div className="navbar-custom">
         <ul className="list-unstyled topbar-menu float-end mb-0">
           <li className="dropdown notification-list d-lg-none">
-            <a
+            <Link
               className="nav-link dropdown-toggle arrow-none"
               data-bs-toggle="dropdown"
-              href="/"
+              to="/"
               role="button"
               aria-haspopup="false"
               aria-expanded="false"
             >
               <i className="dripicons-search noti-icon"></i>
-            </a>
+            </Link>
             <div className="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
               <form className="p-3">
                 <input
@@ -28,10 +29,10 @@ function ContentPage() {
             </div>
           </li>
           <li className="dropdown notification-list topbar-dropdown">
-            <a
+            <Link
               className="nav-link dropdown-toggle arrow-none"
               data-bs-toggle="dropdown"
-              href="/"
+              to="/"
               role="button"
               aria-haspopup="false"
               aria-expanded="false"
@@ -46,10 +47,10 @@ function ContentPage() {
                 English
               </span>{" "}
               <i className="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
-            </a>
+            </Link>
             <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu">
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <img
                   src="assets/images/flags/germany.jpg"
                   alt="user-image"
@@ -57,10 +58,10 @@ function ContentPage() {
                   height="12"
                 />{" "}
                 <span className="align-middle">German</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <img
                   src="assets/images/flags/italy.jpg"
                   alt="user-image"
@@ -68,10 +69,10 @@ function ContentPage() {
                   height="12"
                 />{" "}
                 <span className="align-middle">Italian</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <img
                   src="assets/images/flags/spain.jpg"
                   alt="user-image"
@@ -79,10 +80,10 @@ function ContentPage() {
                   height="12"
                 />{" "}
                 <span className="align-middle">Spanish</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <img
                   src="assets/images/flags/russia.jpg"
                   alt="user-image"
@@ -90,30 +91,30 @@ function ContentPage() {
                   height="12"
                 />{" "}
                 <span className="align-middle">Russian</span>
-              </a>
+              </Link>
             </div>
           </li>
 
           <li className="dropdown notification-list">
-            <a
+            <Link
               className="nav-link dropdown-toggle arrow-none"
               data-bs-toggle="dropdown"
-              href="/"
+              to="/"
               role="button"
               aria-haspopup="false"
               aria-expanded="false"
             >
               <i className="dripicons-bell noti-icon"></i>
               <span className="noti-icon-badge"></span>
-            </a>
+            </Link>
             <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg">
               {/* <!-- item--> */}
               <div className="dropdown-item noti-title px-3">
                 <h5 className="m-0">
                   <span className="float-end">
-                    <a href="/" className="text-dark">
+                    <Link to="/" className="text-dark">
                       <small>Clear All</small>
-                    </a>
+                    </Link>
                   </span>
                   Notification
                 </h5>
@@ -126,8 +127,8 @@ function ContentPage() {
               >
                 <h5 className="text-muted font-13 fw-normal mt-0">Today</h5>
                 {/* <!-- item--> */}
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="dropdown-item p-0 notify-item card unread-noti shadow-none mb-2"
                 >
                   <div className="card-body">
@@ -153,11 +154,11 @@ function ContentPage() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
 
                 {/* <!-- item--> */}
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="dropdown-item p-0 notify-item card read-noti shadow-none mb-2"
                 >
                   <div className="card-body">
@@ -183,13 +184,13 @@ function ContentPage() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
 
                 <h5 className="text-muted font-13 fw-normal mt-0">Yesterday</h5>
 
                 {/* <!-- item--> */}
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="dropdown-item p-0 notify-item card read-noti shadow-none mb-2"
                 >
                   <div className="card-body">
@@ -219,15 +220,15 @@ function ContentPage() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
 
                 <h5 className="text-muted font-13 fw-normal mt-0">
                   30 Dec 2021
                 </h5>
 
                 {/* <!-- item--> */}
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="dropdown-item p-0 notify-item card read-noti shadow-none mb-2"
                 >
                   <div className="card-body">
@@ -250,11 +251,11 @@ function ContentPage() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
 
                 {/* <!-- item--> */}
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="dropdown-item p-0 notify-item card read-noti shadow-none mb-2"
                 >
                   <div className="card-body">
@@ -281,7 +282,7 @@ function ContentPage() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
 
                 <div className="text-center">
                   <i className="mdi mdi-dots-circle mdi-spin text-muted h3 mt-0"></i>
@@ -289,78 +290,78 @@ function ContentPage() {
               </div>
 
               {/* <!-- All--> */}
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="dropdown-item text-center text-primary notify-item border-top border-light py-2"
               >
                 View All
-              </a>
+              </Link>
             </div>
           </li>
 
           <li className="dropdown notification-list d-none d-sm-inline-block">
-            <a
+            <Link
               className="nav-link dropdown-toggle arrow-none"
               data-bs-toggle="dropdown"
-              href="/"
+              to="/"
               role="button"
               aria-haspopup="false"
               aria-expanded="false"
             >
               <i className="dripicons-view-apps noti-icon"></i>
-            </a>
+            </Link>
             <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg p-0">
               <div className="p-2">
                 <div className="row g-0">
                   <div className="col">
-                    <a className="dropdown-icon-item" href="/">
+                    <Link className="dropdown-icon-item" to="/">
                       <img src="assets/images/brands/slack.png" alt="slack" />
                       <span>Slack</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col">
-                    <a className="dropdown-icon-item" href="/">
+                    <Link className="dropdown-icon-item" to="/">
                       <img src="assets/images/brands/github.png" alt="Github" />
                       <span>GitHub</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col">
-                    <a className="dropdown-icon-item" href="/">
+                    <Link className="dropdown-icon-item" to="/">
                       <img
                         src="assets/images/brands/dribbble.png"
                         alt="dribbble"
                       />
                       <span>Dribbble</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="row g-0">
                   <div className="col">
-                    <a className="dropdown-icon-item" href="/">
+                    <Link className="dropdown-icon-item" to="/">
                       <img
                         src="assets/images/brands/bitbucket.png"
                         alt="bitbucket"
                       />
                       <span>Bitbucket</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col">
-                    <a className="dropdown-icon-item" href="/">
+                    <Link className="dropdown-icon-item" to="/">
                       <img
                         src="assets/images/brands/dropbox.png"
                         alt="dropbox"
                       />
                       <span>Dropbox</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col">
-                    <a className="dropdown-icon-item" href="/">
+                    <Link className="dropdown-icon-item" to="/">
                       <img
                         src="assets/images/brands/g-suite.png"
                         alt="G Suite"
                       />
                       <span>G Suite</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>{" "}
                 {/* <!-- end row--> */}
@@ -369,16 +370,16 @@ function ContentPage() {
           </li>
 
           <li className="notification-list">
-            <a className="nav-link end-bar-toggle" href="/">
+            <Link className="nav-link end-bar-toggle" to="/">
               <i className="dripicons-gear noti-icon"></i>
-            </a>
+            </Link>
           </li>
 
           <li className="dropdown notification-list">
-            <a
+            <Link
               className="nav-link dropdown-toggle nav-user arrow-none me-0"
               data-bs-toggle="dropdown"
-              href="/"
+              to="/"
               role="button"
               aria-haspopup="false"
               aria-expanded="false"
@@ -394,7 +395,7 @@ function ContentPage() {
                 <span className="account-user-name">Dominic Keller</span>
                 <span className="account-position">Founder</span>
               </span>
-            </a>
+            </Link>
             <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
               {/* <!-- item--> */}
               <div className=" dropdown-header noti-title">
@@ -402,34 +403,34 @@ function ContentPage() {
               </div>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <i className="mdi mdi-account-circle me-1"></i>
                 <span>My Account</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <i className="mdi mdi-account-edit me-1"></i>
                 <span>Settings</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <i className="mdi mdi-lifebuoy me-1"></i>
                 <span>Support</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <i className="mdi mdi-lock-outline me-1"></i>
                 <span>Lock Screen</span>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <i className="mdi mdi-logout me-1"></i>
                 <span>Logout</span>
-              </a>
+              </Link>
             </div>
           </li>
         </ul>
@@ -464,22 +465,22 @@ function ContentPage() {
             </div>
 
             {/* <!-- item--> */}
-            <a href="/" className="dropdown-item notify-item">
+            <Link to="/" className="dropdown-item notify-item">
               <i className="uil-notes font-16 me-1"></i>
               <span>Analytics Report</span>
-            </a>
+            </Link>
 
             {/* <!-- item--> */}
-            <a href="/" className="dropdown-item notify-item">
+            <Link to="/" className="dropdown-item notify-item">
               <i className="uil-life-ring font-16 me-1"></i>
               <span>How can I help you?</span>
-            </a>
+            </Link>
 
             {/* <!-- item--> */}
-            <a href="/" className="dropdown-item notify-item">
+            <Link to="/" className="dropdown-item notify-item">
               <i className="uil-cog font-16 me-1"></i>
               <span>User profile settings</span>
-            </a>
+            </Link>
 
             {/* <!-- item--> */}
             <div className="dropdown-header noti-title">
@@ -488,7 +489,7 @@ function ContentPage() {
 
             <div className="notification-list">
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <div className="d-flex">
                   <img
                     className="d-flex me-2 rounded-circle"
@@ -501,10 +502,10 @@ function ContentPage() {
                     <span className="font-12 mb-0">UI Designer</span>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               {/* <!-- item--> */}
-              <a href="/" className="dropdown-item notify-item">
+              <Link to="/" className="dropdown-item notify-item">
                 <div className="d-flex">
                   <img
                     className="d-flex me-2 rounded-circle"
@@ -517,7 +518,7 @@ function ContentPage() {
                     <span className="font-12 mb-0">Developer</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -542,12 +543,12 @@ function ContentPage() {
                       <i className="mdi mdi-calendar-range font-13"></i>
                     </span>
                   </div>
-                  <a href="/" className="btn btn-primary ms-2">
+                  <Link to="/" className="btn btn-primary ms-2">
                     <i className="mdi mdi-autorenew"></i>
-                  </a>
-                  <a href="/" className="btn btn-primary ms-1">
+                  </Link>
+                  <Link to="/" className="btn btn-primary ms-1">
                     <i className="mdi mdi-filter-variant"></i>
-                  </a>
+                  </Link>
                 </form>
               </div>
               <h4 className="page-title">Dashboard</h4>
@@ -669,31 +670,31 @@ function ContentPage() {
                 <div className="d-flex justify-content-between align-items-center mb-2">
                   <h4 className="header-title">Projections Vs Actuals</h4>
                   <div className="dropdown">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="dropdown-toggle arrow-none card-drop"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       <i className="mdi mdi-dots-vertical"></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-menu dropdown-menu-end">
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Sales Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Export Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Profit
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Action
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -721,31 +722,31 @@ function ContentPage() {
                 <div className="d-flex justify-content-between align-items-center mb-2">
                   <h4 className="header-title">Revenue</h4>
                   <div className="dropdown">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="dropdown-toggle arrow-none card-drop"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       <i className="mdi mdi-dots-vertical"></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-menu dropdown-menu-end">
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Sales Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Export Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Profit
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Action
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -775,10 +776,10 @@ function ContentPage() {
                     Etiam ultricies nisi vel augue. Curabitur ullamcorper
                     ultricies nisi. Nam eget dui. Etiam rhoncus...
                   </p>
-                  <a href="/" className="btn btn-outline-primary">
+                  <Link to="/" className="btn btn-outline-primary">
                     View Statements
                     <i className="mdi mdi-arrow-right ms-2"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div dir="ltr">
                   <div
@@ -799,31 +800,31 @@ function ContentPage() {
                 <div className="d-flex justify-content-between align-items-center">
                   <h4 className="header-title">Revenue By Location</h4>
                   <div className="dropdown">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="dropdown-toggle arrow-none card-drop"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       <i className="mdi mdi-dots-vertical"></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-menu dropdown-menu-end">
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Sales Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Export Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Profit
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Action
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -905,9 +906,9 @@ function ContentPage() {
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center mb-2">
                   <h4 className="header-title">Top Selling Products</h4>
-                  <a href="/" className="btn btn-sm btn-link">
+                  <Link to="/" className="btn btn-sm btn-link">
                     Export <i className="mdi mdi-download ms-1"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="table-responsive">
                   <table className="table table-centered table-nowrap table-hover mb-0">
@@ -1038,31 +1039,31 @@ function ContentPage() {
                 <div className="d-flex justify-content-between align-items-center">
                   <h4 className="header-title">Total Sales</h4>
                   <div className="dropdown">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="dropdown-toggle arrow-none card-drop"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       <i className="mdi mdi-dots-vertical"></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-menu dropdown-menu-end">
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Sales Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Export Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Profit
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Action
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1103,31 +1104,31 @@ function ContentPage() {
                 <div className="d-flex justify-content-between align-items-center mb-2">
                   <h4 className="header-title">Recent Activity</h4>
                   <div className="dropdown">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="dropdown-toggle arrow-none card-drop"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       <i className="mdi mdi-dots-vertical"></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-menu dropdown-menu-end">
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Sales Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Export Report
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Profit
-                      </a>
+                      </Link>
                       {/* <!-- item--> */}
-                      <a href="/" className="dropdown-item">
+                      <Link to="/" className="dropdown-item">
                         Action
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1141,9 +1142,9 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-info fw-bold mb-1 d-block">
+                      <Link to="/" className="text-info fw-bold mb-1 d-block">
                         You sold an item
-                      </a>
+                      </Link>
                       <small>
                         Paul Burgess just purchased “Hyper - Admin Dashboard”!
                       </small>
@@ -1156,9 +1157,12 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-primary fw-bold mb-1 d-block">
+                      <Link
+                        to="/"
+                        className="text-primary fw-bold mb-1 d-block"
+                      >
                         Product on the Bootstrap Market
-                      </a>
+                      </Link>
                       <small>
                         Dave Gamache added
                         <span className="fw-bold">Admin Dashboard</span>
@@ -1172,9 +1176,9 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-microphone bg-info-lighten text-info timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-info fw-bold mb-1 d-block">
+                      <Link to="/" className="text-info fw-bold mb-1 d-block">
                         Robert Delaney
-                      </a>
+                      </Link>
                       <small>
                         Send you message
                         <span className="fw-bold">"Are you there?"</span>
@@ -1188,9 +1192,12 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-upload bg-primary-lighten text-primary timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-primary fw-bold mb-1 d-block">
+                      <Link
+                        to="/"
+                        className="text-primary fw-bold mb-1 d-block"
+                      >
                         Audrey Tobey
-                      </a>
+                      </Link>
                       <small>
                         Uploaded a photo
                         <span className="fw-bold">"Error.jpg"</span>
@@ -1204,9 +1211,9 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-info fw-bold mb-1 d-block">
+                      <Link to="/" className="text-info fw-bold mb-1 d-block">
                         You sold an item
-                      </a>
+                      </Link>
                       <small>
                         Paul Burgess just purchased “Hyper - Admin Dashboard”!
                       </small>
@@ -1219,9 +1226,12 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-primary fw-bold mb-1 d-block">
+                      <Link
+                        to="/"
+                        className="text-primary fw-bold mb-1 d-block"
+                      >
                         Product on the Bootstrap Market
-                      </a>
+                      </Link>
                       <small>
                         Dave Gamache added
                         <span className="fw-bold">Admin Dashboard</span>
@@ -1235,9 +1245,9 @@ function ContentPage() {
                   <div className="timeline-item">
                     <i className="mdi mdi-microphone bg-info-lighten text-info timeline-icon"></i>
                     <div className="timeline-item-info">
-                      <a href="/" className="text-info fw-bold mb-1 d-block">
+                      <Link to="/" className="text-info fw-bold mb-1 d-block">
                         Robert Delaney
-                      </a>
+                      </Link>
                       <small>
                         Send you message
                         <span className="fw-bold">"Are you there?"</span>

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 // import ImportScript from "./ImportScript";
 import { Link } from "react-router-dom";
 function LeftMenu() {
@@ -12,19 +10,19 @@ function LeftMenu() {
         {/* LOGO */}
         <Link to="/" className="logo text-center logo-light">
           <span className="logo-lg">
-            <img src="assets/images/logo.png" alt height={16} />
+            <img src="assets/images/logo.png" alt="user" height={16} />
           </span>
           <span className="logo-sm">
-            <img src="assets/images/logo_sm.png" alt height={16} />
+            <img src="assets/images/logo_sm.png" alt="user" height={16} />
           </span>
         </Link>
         {/* LOGO */}
         <Link to="/" className="logo text-center logo-dark">
           <span className="logo-lg">
-            <img src="assets/images/logo-dark.png" alt height={16} />
+            <img src="assets/images/logo-dark.png" alt="user" height={16} />
           </span>
           <span className="logo-sm">
-            <img src="assets/images/logo_sm_dark.png" alt height={16} />
+            <img src="assets/images/logo_sm_dark.png" alt="user" height={16} />
           </span>
         </Link>
         <div
@@ -929,7 +927,7 @@ function LeftMenu() {
                       <img
                         src="assets/images/help-icon.svg"
                         height={90}
-                        alt="Helper Icon Image"
+                        alt="Helper Icon "
                       />
                       <h5 className="mt-3">Unlimited Access</h5>
                       <p className="mb-3">
