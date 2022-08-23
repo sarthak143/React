@@ -6,6 +6,7 @@ import LeftMenu from './components/shared/LeftMenu'
 import RightContent from './components/shared/RightContent'
 import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
+import Todo from './components/todo/Todo'
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
               path='/zomato'
               element={
                 <Zomato />}></Route>
+            <Route
+              path="/todo"
+              element={<Todo />}
+            />
 
             <Route
               path="*"

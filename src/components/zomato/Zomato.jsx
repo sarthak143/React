@@ -12,7 +12,7 @@ function Zomato() {
 
   const getResult = async () => {
     const response = await fetch(
-      "https://developers.zomato.com/api/v2.1/search?entity_id=1&entity_type=city&q=haldiram&count=100',",
+      "https://developers.zomato.com/api/v2.1/search?entity_id=1&entity_type=city&q=icecream&count=100',",
       {
         method: "Get",
         headers: {
@@ -78,30 +78,54 @@ function Zomato() {
         </div>
 
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
-            {/* Simple card */}
-            <div className="card d-block">
-              <img
-                className="card-img-top"
-                src="assets/images/small/small-1.jpg"
-                alt="Card  cap"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                {/* <p className="card-text">{`${data.[restaurants].0.restaurant.all_reviews.all_reviews_count}`}</p>  */}
-                <p className="card-text">
-                  {restaurantData.map((i) => {
-                    return i.restaurant.name;
-                  })}
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Button
-                </a>
-              </div>{" "}
-              {/* end card-body*/}
-            </div>{" "}
-            {/* end card*/}
-          </div>
+          {restaurantData.map((res, index) => {
+            return (
+              <a
+                href={res.restaurant.url}
+                target="blank"
+                key={index}
+                className="col-sm-6 col-lg-3"
+              >
+                <div
+                  style={{ minHeight: "450px" }}
+                  className="card ribbon-box d-block"
+                >
+                  <img
+                    className="card-img-top"
+                    src={res.restaurant.thumb}
+                    alt="Card  cap"
+                  />
+                  <div className="card-body">
+                    <div
+                      className={`ribbon float-end ${
+                        res.restaurant.user_rating.aggregate_rating < 3.5 &&
+                        "ribbon-danger"
+                      }
+                     ${
+                       res.restaurant.user_rating.aggregate_rating > 4 &&
+                       "ribbon-success"
+                     }
+                     ${
+                       (res.restaurant.user_rating.aggregate_rating > 3.5) &
+                         (res.restaurant.user_rating.aggregate_rating < 4.05) &&
+                       "ribbon-warning"
+                     }`}
+                    >
+                      <i className="mdi mdi-account-star me-1"></i>
+                      {res.restaurant.user_rating.aggregate_rating}
+                    </div>
+                    <h5 className="card-title">{res.restaurant.name}</h5>
+                    <p className="card-text">
+                      {res.restaurant.location.address}
+                    </p>
+                    {/* <a href="/" className="btn btn-primary">
+                      Button
+                    </a> */}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </>

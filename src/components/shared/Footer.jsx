@@ -5,8 +5,8 @@ function Footer() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6">
-            <script>document.write(new Date().getFullYear())</script> © Hyper -
-            Coderthemes.com
+            <script>document.write(new Date().getFullYear())</script>
+            Made with <span style={{ color: "red" }}>❤</span> by Sarthak
           </div>
           <div className="col-md-6">
             <div className="text-md-end footer-links d-none d-md-block">
