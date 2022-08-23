@@ -429,7 +429,7 @@ function Navbar() {
                 />
               </span>
               <span>
-                <span className="account-user-name">Dominic Keller</span>
+                <span className="account-user-name">Sarthak Bansal</span>
                 <span className="account-position">Founder</span>
               </span>
             </a>
