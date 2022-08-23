@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import ContentPage from './components/ContentPage'
 import Footer from './components/shared/Footer'
+import PageNotFound from './components/shared/PageNotFound'
 import LeftMenu from './components/shared/LeftMenu'
 import RightContent from './components/shared/RightContent'
 import Zomato from './components/zomato/Zomato'
@@ -22,8 +23,12 @@ function App() {
               path='/zomato'
               element={
                 <Zomato />}></Route>
-          </Routes>
 
+            <Route
+              path="*"
+              element={<PageNotFound />}
+            />
+          </Routes>
           <Footer />
         </RightContent>
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import Popper from 'popper.js';
+import './index.css'
 // import './components/assets/js/app.min'
 // import './components/assets/js/vendor.min'
 // import './components/assets/js/vendor/apexcharts.min'
