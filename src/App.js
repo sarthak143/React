@@ -6,8 +6,8 @@ import LeftMenu from './components/shared/LeftMenu'
 import RightContent from './components/shared/RightContent'
 import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
-import Todo from './components/todo/Todo'
 import Settings from './components/shared/Settings'
+import KanbanHome from './components/Kanban/KanbanHome'
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
                 <Zomato />}></Route>
             <Route
               path="/todo"
-              element={<Todo />}
+              element={<KanbanHome />}
             />
 
             <Route
