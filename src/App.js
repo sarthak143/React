@@ -7,6 +7,7 @@ import RightContent from './components/shared/RightContent'
 import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
 import Todo from './components/todo/Todo'
+import Settings from './components/shared/Settings'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         </RightContent>
 
       </div>
+      <Settings />
     </Router>
   )
 }

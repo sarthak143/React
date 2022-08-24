@@ -1,5 +1,24 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(true);
+  const [isSettingOpen, setisSettingOpen] = useState(true);
+  function toggleLeftbar(openclose) {
+    setIsOpen(openclose);
+    if (openclose) {
+      document.body.setAttribute("data-leftbar-compact-mode", "condensed");
+    } else {
+      document.body.removeAttribute("data-leftbar-compact-mode");
+    }
+  }
+
+  function toggleSettings() {
+    document.body.classList.toggle("end-bar-enabled");
+  }
+
+  useEffect(() => {
+    toggleLeftbar(isOpen);
+  }, []);
   return (
     <>
       <div className="navbar-custom">
@@ -408,7 +427,11 @@ function Navbar() {
             </div>
           </li>
           <li className="notification-list">
-            <a className="nav-link end-bar-toggle" href="/">
+            <a
+              className="nav-link end-bar-toggle"
+              onClick={toggleSettings}
+              href="#!"
+            >
               <i className="dripicons-gear noti-icon" />
             </a>
           </li>
@@ -466,7 +489,10 @@ function Navbar() {
             </div>
           </li>
         </ul>
-        <button className="button-menu-mobile open-left">
+        <button
+          className="button-menu-mobile open-left"
+          onClick={() => toggleLeftbar(!isOpen)}
+        >
           <i className="mdi mdi-menu" />
         </button>
         <div className="app-search dropdown d-none d-lg-block">
