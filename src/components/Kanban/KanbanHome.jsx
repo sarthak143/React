@@ -1,17 +1,18 @@
+import { v4 as uuidv4 } from "uuid";
 import KanbanForm from "./KanbanForm";
 import Todo from "./Todo";
 import TaskData from "./data/Data";
 import { useEffect, useState } from "react";
 function KanbanHome() {
   const [Taskdata, setTaskdata] = useState(TaskData);
-  // const addtaskk = (newFeedback) => {
-  //   newFeedback.id = uuidv4();
-  //   setFeedback([newFeedback, ...feedback]);
-  // };
+  const addtask = (newTaskdata) => {
+    newTaskdata.id = uuidv4();
+    setTaskdata([newTaskdata, ...Taskdata]);
+  };
 
   // const deleteFeedback = (id) => {
   //   if (window.confirm("Are you sure you want to delete?")) {
-  //     setFeedback(feedback.filter((item) => item.id !== id));
+  //     setTaskdata(feedback.filter((item) => item.id !== id));
   //   }
   // };
   useEffect(() => {
@@ -61,7 +62,7 @@ function KanbanHome() {
         </div>
         {/* end row*/}
       </div>
-      <KanbanForm />
+      <KanbanForm handleAdd={addtask} />
     </>
   );
 }
