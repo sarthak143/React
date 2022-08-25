@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Todo({ Taskdata, handleDelete }) {
+function Review({ Taskdata, handleDelete }) {
   return (
     <>
       <div
@@ -8,10 +8,10 @@ function Todo({ Taskdata, handleDelete }) {
         data-plugin="dragula"
         data-containers='["task-list-one", "task-list-two", "task-list-three", "task-list-four"]'
       >
-        <h5 className="mt-0 task-header">TODO (3)</h5>
+        <h5 className="mt-0 task-header">REVIEW (3)</h5>
         <div id="task-list-one" className="task-list-items">
           {/* Task Item */}
-          {Taskdata.filter((i) => i.step.toLowerCase() === "todo").map(
+          {Taskdata.filter((i) => i.step.toLowerCase() === "review").map(
             (item, index) => (
               <div key={item.id} className="card mb-0">
                 <div className="card-body p-3">
@@ -103,4 +103,4 @@ function Todo({ Taskdata, handleDelete }) {
   );
 }
 
-export default Todo;
+export default Review;

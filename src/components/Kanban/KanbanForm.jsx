@@ -1,13 +1,14 @@
 import { useState } from "react";
 
 function KanbanForm({ handleAdd }) {
-  const [desc, setDesc] = useState("");
+  const [desc, setDesc] = useState("Description");
   const [priority, setPriority] = useState("High");
   const [btnDisabled, setBtnDisabled] = useState(true);
-  const [owner, setOwner] = useState("");
-  const [title, setTitle] = useState("");
-  const [date, setDate] = useState("");
-  const [project, setProject] = useState("");
+  const [owner, setOwner] = useState("sarthak");
+  const [title, setTitle] = useState("Web Development");
+  const [date, setDate] = useState("12-04-2023");
+  const [project, setProject] = useState("IOS");
+  const [step, setStept] = useState("todo");
 
   const handleProjectChange = (e) => {
     setProject(e.target.value);
@@ -28,6 +29,10 @@ function KanbanForm({ handleAdd }) {
     setDate(e.target.value);
   };
 
+  const handleStepChange = (e) => {
+    setStept(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -39,6 +44,7 @@ function KanbanForm({ handleAdd }) {
       owner,
       date,
       comments: 12,
+      step,
     };
     handleAdd(newFeedback);
   };
@@ -67,19 +73,6 @@ function KanbanForm({ handleAdd }) {
             </div>
             <div className="modal-body">
               <form onSubmit={handleSubmit} className="p-2">
-                <div className="mb-3">
-                  <label className="form-label">Project</label>
-                  <select
-                    onChange={handleProjectChange}
-                    value={project}
-                    className="form-select form-control-light"
-                  >
-                    <option>Select</option>
-                    <option>Hyper - Admin Dashboard</option>
-                    <option>CRM - Design &amp; Development</option>
-                    <option>iOS - App Design</option>
-                  </select>
-                </div>
                 <div className="row">
                   <div className="col-md-8">
                     <div className="mb-3">
@@ -94,6 +87,42 @@ function KanbanForm({ handleAdd }) {
                         id="task-title"
                         placeholder="Enter title"
                       />
+                    </div>
+                  </div>
+
+                  <div className="col-md-4">
+                    <div className="mb-3">
+                      <label htmlFor="task-priority2" className="form-label">
+                        Step
+                      </label>
+                      <select
+                        onChange={handleStepChange}
+                        value={step.toLowerCase}
+                        className="form-select form-control-light"
+                        id="task-priority2"
+                      >
+                        <option value="todo">TODO</option>
+                        <option value="inprogress">IN Progress</option>
+                        <option value="review">Review</option>
+                        <option value="done">Done</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-8">
+                    <div className="mb-3">
+                      <label className="form-label">Project</label>
+                      <select
+                        onChange={handleProjectChange}
+                        value={project}
+                        className="form-select form-control-light"
+                      >
+                        <option>Select</option>
+                        <option>Hyper - Admin Dashboard</option>
+                        <option>CRM - Design &amp; Development</option>
+                        <option>iOS - App Design</option>
+                      </select>
                     </div>
                   </div>
                   <div className="col-md-4">

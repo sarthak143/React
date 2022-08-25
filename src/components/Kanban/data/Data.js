@@ -7,7 +7,8 @@ const TaskData = [
         desc: 'Lorem ipsum dolor sit est voluptatum ipsa quae.',
         owner: "sarthak",
         date: "24-dec-2022",
-        comments: "24"
+        comments: "24",
+        step: "TODO"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ const TaskData = [
         desc: 'Lorem ipsum dolor sit est voluptatum ipsa quae.',
         owner: "sarthak",
         date: "24-dec-2022",
-        comments: "24"
+        comments: "24",
+        step: "INPROGRESS"
     },
     {
         id: 3,
@@ -27,7 +29,19 @@ const TaskData = [
         desc: 'Lorem ipsum dolor sit est voluptatum ipsa quae.',
         owner: "sarthak",
         date: "24-dec-2022",
-        comments: "24"
+        comments: "24",
+        step: "REVIEW"
+    },
+    {
+        id: 4,
+        priority: "Low",
+        project: "Android",
+        title: "android homepage",
+        desc: 'Lorem ipsum dolor sit est voluptatum ipsa quae.',
+        owner: "sarthak",
+        date: "24-dec-2022",
+        comments: "24",
+        step: "DONE"
     },
 ]
 

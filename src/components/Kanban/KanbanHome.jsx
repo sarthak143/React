@@ -3,6 +3,9 @@ import KanbanForm from "./KanbanForm";
 import Todo from "./Todo";
 import TaskData from "./data/Data";
 import { useEffect, useState } from "react";
+import Inprogress from "./Inprogress";
+import Done from "./Done";
+import Review from "./Review";
 function KanbanHome() {
   const [Taskdata, setTaskdata] = useState(TaskData);
 
@@ -56,6 +59,9 @@ function KanbanHome() {
           <div className="col-12">
             <div className="board">
               <Todo Taskdata={Taskdata} handleDelete={deleteFeedback} />
+              <Inprogress Taskdata={Taskdata} handleDelete={deleteFeedback} />
+              <Review Taskdata={Taskdata} handleDelete={deleteFeedback} />
+              <Done Taskdata={Taskdata} handleDelete={deleteFeedback} />
             </div>
             {/* end .board*/}
           </div>
