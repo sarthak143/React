@@ -28,7 +28,7 @@ function App() {
               element={
                 <Zomato />}></Route>
             <Route
-              path="/todo"
+              path="/Kanban"
               element={<KanbanHome />}
             />
             {/* <Route

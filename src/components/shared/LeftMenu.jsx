@@ -98,14 +98,14 @@ function LeftMenu() {
                         </Link>
                       </li>
                       <li className="side-nav-item">
-                        <Link to="todo" className="side-nav-link">
+                        <Link to="Kanban" className="side-nav-link">
                           <i className=" uil-list-ul" />
-                          <span> To-Do list </span>
+                          <span> Kanban Board </span>
                         </Link>
                       </li>
                       <li className="side-nav-item">
                         <Link to="search" className="side-nav-link">
-                          <i className="uil-shield-exclamation" />
+                          <i className="uil-search" />
                           <span> Search </span>
                         </Link>
                       </li>
