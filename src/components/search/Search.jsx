@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 function Search() {
   var datas = [
     { name: "Zomato" },
@@ -7,20 +7,14 @@ function Search() {
     { name: "Sarthak" },
   ];
 
-  const [searchText, setSearchText] = useState("");
   const [dataResult, setdataResult] = useState(datas);
-
+  const [isdropdown, setDropdown] = useState(false);
   function setSearch(e) {
-    setSearchText(e.target.value);
-    finaldatas();
-  }
-
-  function finaldatas() {
-    var result = datas.filter((i) => {
-      return i.name.indexOf(searchText) > -1;
-    });
-    console.log(result);
-    setdataResult(result);
+    setdataResult(
+      datas.filter((i) => {
+        return i.name.indexOf(e.target.value) > -1;
+      })
+    );
   }
 
   return (
@@ -31,7 +25,8 @@ function Search() {
             <input
               name="search"
               onChange={setSearch}
-              value={searchText}
+              onFocus={(e) => setDropdown(true)}
+              onBlur={(e) => setDropdown(false)}
               type="text"
               className="form-control"
               placeholder="Search ..."
@@ -44,12 +39,15 @@ function Search() {
           </div>
         </form>
         <div
-          className="dropdown-menu dropdown-menu-animated dropdown-lg d-block"
+          className={`dropdown-menu dropdown-menu-animated dropdown-lg ${
+            isdropdown && "d-block"
+          }`}
           id="search-dropdown"
         >
           <div className="dropdown-header noti-title">
             <h5 className="text-overflow mb-2">
-              Found <span className="text-danger">17</span> results
+              Found <span className="text-danger">{dataResult.length} </span>
+              results
             </h5>
           </div>
           {dataResult.map((data, i) => {
@@ -62,12 +60,6 @@ function Search() {
           })}
         </div>
       </div>
-      {/* 
-      <ul>
-        {dataResult.map((data, i) => {
-          return <li key={i}>{data.name}</li>;
-        })}
-      </ul> */}
     </div>
   );
 }
