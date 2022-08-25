@@ -10,8 +10,18 @@ const TaskData = [
         comments: "24"
     },
     {
-        id: 1,
-        priority: "high",
+        id: 2,
+        priority: "Medium",
+        project: "Android",
+        title: "android homepage",
+        desc: 'Lorem ipsum dolor sit est voluptatum ipsa quae.',
+        owner: "sarthak",
+        date: "24-dec-2022",
+        comments: "24"
+    },
+    {
+        id: 3,
+        priority: "Low",
         project: "Android",
         title: "android homepage",
         desc: 'Lorem ipsum dolor sit est voluptatum ipsa quae.',

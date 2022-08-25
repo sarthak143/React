@@ -5,16 +5,17 @@ import TaskData from "./data/Data";
 import { useEffect, useState } from "react";
 function KanbanHome() {
   const [Taskdata, setTaskdata] = useState(TaskData);
+
   const addtask = (newTaskdata) => {
     newTaskdata.id = uuidv4();
     setTaskdata([newTaskdata, ...Taskdata]);
   };
 
-  // const deleteFeedback = (id) => {
-  //   if (window.confirm("Are you sure you want to delete?")) {
-  //     setTaskdata(feedback.filter((item) => item.id !== id));
-  //   }
-  // };
+  const deleteFeedback = (id) => {
+    if (window.confirm("Are you sure you want to delete?")) {
+      setTaskdata(Taskdata.filter((item) => item.id !== id));
+    }
+  };
   useEffect(() => {
     // console.log(Taskdata);
   }, []);
@@ -54,7 +55,7 @@ function KanbanHome() {
         <div className="row">
           <div className="col-12">
             <div className="board">
-              <Todo Taskdata={Taskdata} />
+              <Todo Taskdata={Taskdata} handleDelete={deleteFeedback} />
             </div>
             {/* end .board*/}
           </div>

@@ -104,6 +104,12 @@ function LeftMenu() {
                         </Link>
                       </li>
                       <li className="side-nav-item">
+                        <Link to="search" className="side-nav-link">
+                          <i className="uil-shield-exclamation" />
+                          <span> Search </span>
+                        </Link>
+                      </li>
+                      <li className="side-nav-item">
                         <Link to="error" className="side-nav-link">
                           <i className="uil-shield-exclamation" />
                           <span> Error Page </span>

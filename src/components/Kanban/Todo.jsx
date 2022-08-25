@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function Todo({ Taskdata }) {
+function Todo({ Taskdata, handleDelete }) {
   //   useEffect(() => {
   //     console.log(Tododata.id);
   //   });
@@ -18,7 +18,16 @@ function Todo({ Taskdata }) {
             <div key={index} className="card mb-0">
               <div className="card-body p-3">
                 <small className="float-end text-muted">{item.date}</small>
-                <span className="badge bg-danger">{item.priority}</span>
+                <span
+                  className={`badge ${
+                    item.priority.toLowerCase() == "high" && "bg-danger"
+                  } ${item.priority.toLowerCase() == "low" && "bg-success"} ${
+                    item.priority.toLowerCase() == "medium" &&
+                    "bg-secondary text-light"
+                  }`}
+                >
+                  {item.priority}
+                </span>
                 <h5 className="mt-2 mb-2">
                   <a
                     href="#!"
@@ -55,7 +64,11 @@ function Todo({ Taskdata }) {
                       Edit
                     </a>
                     {/* item*/}
-                    <a href="#!" className="dropdown-item">
+                    <a
+                      href="#!"
+                      onClick={() => handleDelete(item.id)}
+                      className="dropdown-item"
+                    >
                       <i className="mdi mdi-delete me-1" />
                       Delete
                     </a>

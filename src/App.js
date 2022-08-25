@@ -8,7 +8,7 @@ import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
 import Settings from './components/shared/Settings'
 import KanbanHome from './components/Kanban/KanbanHome'
-
+import Search from './components/search/Search'
 
 function App() {
   return (
@@ -31,6 +31,10 @@ function App() {
               path="/todo"
               element={<KanbanHome />}
             />
+            {/* <Route
+              path="/search"
+              element={<Search />}
+            /> */}
 
             <Route
               path="*"

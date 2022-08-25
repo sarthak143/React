@@ -30,18 +30,17 @@ function KanbanForm({ handleAdd }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (desc.trim().length > 10) {
-      const newFeedback = {
-        priority,
-        project,
-        title,
-        desc,
-        owner,
-        date,
-        comments: 12,
-      };
-      handleAdd(newFeedback);
-    }
+
+    const newFeedback = {
+      priority,
+      project,
+      title,
+      desc,
+      owner,
+      date,
+      comments: 12,
+    };
+    handleAdd(newFeedback);
   };
   return (
     <>
