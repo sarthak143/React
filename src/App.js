@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ContentPage from './components/ContentPage'
 import Footer from './components/shared/Footer'
 import PageNotFound from './components/shared/PageNotFound'
@@ -12,7 +12,7 @@ import Search from './components/search/Search'
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="wrapper">
         <LeftMenu />
         <RightContent>
@@ -46,7 +46,7 @@ function App() {
 
       </div>
       <Settings />
-    </Router>
+    </BrowserRouter>
   )
 }
 
