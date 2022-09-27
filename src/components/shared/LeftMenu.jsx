@@ -1,9 +1,5 @@
-// import ImportScript from "./ImportScript";
 import { Link } from "react-router-dom";
 function LeftMenu() {
-  //   const Demo = (props) => {
-  //     ImportScript("../assets/js/app.min.js");
-  //   };
   return (
     <>
       <div className="leftside-menu menuitem-active">

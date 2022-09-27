@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import ContentPage from './components/ContentPage'
+import Homepage from './components/homepage/Homepage'
 import Footer from './components/shared/Footer'
 import PageNotFound from './components/shared/PageNotFound'
 import LeftMenu from './components/shared/LeftMenu'
@@ -8,7 +8,7 @@ import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
 import Settings from './components/shared/Settings'
 import KanbanHome from './components/Kanban/KanbanHome'
-import Search from './components/search/Search'
+// import Search from './components/search/Search'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route
               path='/'
               element={
-                <ContentPage />}></Route>
+                <Homepage />}></Route>
             <Route
               path='/zomato'
               element={

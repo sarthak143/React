@@ -84,7 +84,7 @@ function Done({ Taskdata, handleDelete }) {
                   </div>
                   <p className="mb-0">
                     <img
-                      src="assets/images/users/avatar-2.jpg"
+                      src="assets/images/users/avatar-2.png"
                       alt="user-img"
                       className="avatar-xs rounded-circle me-1"
                     />

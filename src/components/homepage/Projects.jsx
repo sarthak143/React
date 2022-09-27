@@ -1,0 +1,109 @@
+import { Link } from "react-router-dom";
+import Resume from "../assets/downloads/Sarthak_Resume.pdf";
+import AWS from "../assets/downloads/AWS.pdf";
+function Projects() {
+  return (
+    <>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title mb-3">Files</h5>
+          <div className="card mb-1 shadow-none border">
+            <div className="p-2">
+              <div className="row align-items-center">
+                <div className="col-auto">
+                  <div className="avatar-sm">
+                    <span className="avatar-title rounded">.PDF</span>
+                  </div>
+                </div>
+                <div className="col ps-0">
+                  <Link
+                    to={Resume}
+                    target="_blank"
+                    download
+                    className="text-muted fw-bold"
+                  >
+                    Resume
+                  </Link>
+                  <p className="mb-0">2.3 MB</p>
+                </div>
+                <div className="col-auto">
+                  {/* Button */}
+                  <Link
+                    to={Resume}
+                    target="_blank"
+                    download
+                    className="btn btn-link btn-lg text-muted"
+                  >
+                    <i className="dripicons-download" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card mb-1 shadow-none border">
+            <div className="p-2">
+              <div className="row align-items-center">
+                <div className="col-auto">
+                  <img
+                    src="/assets/images/aws.png"
+                    className="avatar-sm rounded"
+                    alt="file-"
+                  />
+                </div>
+                <div className="col ps-0">
+                  <Link
+                    to={AWS}
+                    target="_blank"
+                    download
+                    className="text-muted fw-bold"
+                  >
+                    AWS Certified Developer.pdf
+                  </Link>
+                  <p className="mb-0">3.25 MB</p>
+                </div>
+                <div className="col-auto">
+                  {/* Button */}
+                  <Link
+                    to={AWS}
+                    target="_blank"
+                    download
+                    className="btn btn-link btn-lg text-muted"
+                  >
+                    <i className="dripicons-download" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card mb-0 shadow-none border">
+            <div className="p-2">
+              <div className="row align-items-center">
+                <div className="col-auto">
+                  <div className="avatar-sm">
+                    <span className="avatar-title bg-secondary text-light rounded">
+                      .MP4
+                    </span>
+                  </div>
+                </div>
+                <div className="col ps-0">
+                  <Link to="/" className="text-muted fw-bold">
+                    Admin-bug-report.mp4
+                  </Link>
+                  <p className="mb-0">7.05 MB</p>
+                </div>
+                <div className="col-auto">
+                  {/* Button */}
+                  <Link to="/" className="btn btn-link btn-lg text-muted">
+                    <i className="dripicons-download" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Projects;

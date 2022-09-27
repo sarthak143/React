@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Search from "../search/Search";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
-  const [isSettingOpen, setisSettingOpen] = useState(true);
+  // const [isSettingOpen, setisSettingOpen] = useState(true);
   function toggleLeftbar(openclose) {
     setIsOpen(openclose);
     if (openclose) {
@@ -238,7 +238,7 @@ function Navbar() {
                                 <div className="flex-shrink-0">
                                   <div className="notify-icon">
                                     <img
-                                      src="assets/images/users/avatar-2.jpg"
+                                      src="assets/images/users/avatar-2.png"
                                       className="img-fluid rounded-circle"
                                       alt="uu"
                                     />
@@ -447,7 +447,7 @@ function Navbar() {
             >
               <span className="account-user-avatar">
                 <img
-                  src="assets/images/users/avatar-1.jpg"
+                  src="assets/images/users/avatar-2.png"
                   alt="user"
                   className="rounded-circle"
                 />
