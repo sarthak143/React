@@ -32,7 +32,7 @@ function Zomato() {
 
   return (
     <>
-      <div className="container-fluid">
+      <div>
         <div className="row">
           <div className="card">
             <form>

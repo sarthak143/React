@@ -3,7 +3,6 @@ import Homepage from './components/homepage/Homepage'
 import Footer from './components/shared/Footer'
 import PageNotFound from './components/shared/PageNotFound'
 import LeftMenu from './components/shared/LeftMenu'
-import RightContent from './components/shared/RightContent'
 import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
 import Settings from './components/shared/Settings'
@@ -13,37 +12,39 @@ import KanbanHome from './components/Kanban/KanbanHome'
 function App() {
   return (
     <BrowserRouter>
-      <div className="wrapper">
-        <LeftMenu />
-        <RightContent>
-          <Navbar />
-          <Routes>
+      <Navbar />
+      <div className="container-fluid">
+        <div className="wrapper menuitem-active">
+          <LeftMenu />
+          <div className="content-page">
 
-            <Route
-              path='/'
-              element={
-                <Homepage />}></Route>
-            <Route
-              path='/zomato'
-              element={
-                <Zomato />}></Route>
-            <Route
-              path="/Kanban"
-              element={<KanbanHome />}
-            />
-            {/* <Route
+            <Routes>
+
+              <Route
+                path='/'
+                element={
+                  <Homepage />}></Route>
+              <Route
+                path='/zomato'
+                element={
+                  <Zomato />}></Route>
+              <Route
+                path="/Kanban"
+                element={<KanbanHome />}
+              />
+              {/* <Route
               path="/search"
               element={<Search />}
             /> */}
 
-            <Route
-              path="*"
-              element={<PageNotFound />}
-            />
-          </Routes>
-          <Footer />
-        </RightContent>
-
+              <Route
+                path="*"
+                element={<PageNotFound />}
+              />
+            </Routes>
+            <Footer />
+          </div>
+        </div>
       </div>
       <Settings />
     </BrowserRouter>

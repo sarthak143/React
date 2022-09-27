@@ -7,7 +7,7 @@ function Homepage() {
   return (
     <div className="content">
       {/* <!-- Start Content--> */}
-      <div className="container-fluid">
+      <div>
         {/* <!-- start page title --> */}
         <div className="row">
           <div className="col-12">
