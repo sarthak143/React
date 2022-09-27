@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Link } from "react-router-dom";
-import About from "./About";
-import Projects from "./Projects";
+import Right from "./Right";
+import Left from "./Left";
 
 function Homepage() {
   return (
@@ -39,10 +39,10 @@ function Homepage() {
         {/* <!-- end page title --> */}
         <div className="row">
           <div className="col-xxl-8 col-lg-6">
-            <About />
+            <Right />
           </div>
           <div className="col-lg-6 col-xxl-4">
-            <Projects />
+            <Left />
           </div>
         </div>
       </div>

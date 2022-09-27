@@ -454,7 +454,7 @@ function Navbar() {
               </span>
               <span>
                 <span className="account-user-name">Sarthak Bansal</span>
-                <span className="account-position">Founder</span>
+                <span className="account-position">Creator</span>
               </span>
             </a>
             <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">

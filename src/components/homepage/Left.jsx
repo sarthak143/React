@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import Resume from "../assets/downloads/Sarthak_Resume.pdf";
 import AWS from "../assets/downloads/AWS.pdf";
 function Projects() {
+  const GAME = "https://sarthak143.github.io/2048/";
+  const EXTENSION =
+    "https://chrome.google.com/webstore/detail/dark-mode-kali/chbdmdapmeflnkgibpgbdcblndooljff?hl=en-GB";
   return (
     <>
       <div className="card">
@@ -46,7 +49,7 @@ function Projects() {
                 <div className="col-auto">
                   <img
                     src="/assets/images/aws.png"
-                    className="avatar-sm rounded"
+                    className="avatar-sm rounded object-fit"
                     alt="file-"
                   />
                 </div>
@@ -71,6 +74,86 @@ function Projects() {
                   >
                     <i className="dripicons-download" />
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title mb-3">Projects</h5>
+          <div className="card mb-1 shadow-none border">
+            <div className="p-2">
+              <div className="row align-items-center">
+                <div className="col-auto">
+                  <div className="avatar-sm">
+                    <span className="avatar-title bg-warning-lighten text-dark font-15 rounded">
+                      2048
+                    </span>
+                  </div>
+                </div>
+                <div className="col ps-0">
+                  <a
+                    href={GAME}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-muted fw-bold"
+                  >
+                    2048 GAME
+                  </a>
+                  <p className="mb-0">2.3 MB</p>
+                </div>
+                <div className="col-auto">
+                  {/* Button */}
+                  <a
+                    href={GAME}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-link btn-lg text-muted"
+                  >
+                    <i className="uil uil-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card mb-1 shadow-none border">
+            <div className="p-2">
+              <div className="row align-items-center">
+                <div className="col-auto">
+                  <img
+                    src="/assets/images/dark.png"
+                    className="avatar-sm rounded object-fit"
+                    alt="file-"
+                  />
+                </div>
+                <div className="col ps-0">
+                  <a
+                    href={EXTENSION}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-muted fw-bold"
+                  >
+                    Chrome Extension
+                  </a>
+                  <p className="mb-0">
+                    <span className="badge bg-success">
+                      5 <i className="mdi mdi-star"></i>
+                    </span>
+                  </p>
+                </div>
+                <div className="col-auto">
+                  {/* Button */}
+                  <a
+                    href={EXTENSION}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-link btn-lg text-muted"
+                  >
+                    <i className="uil uil-external-link-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>

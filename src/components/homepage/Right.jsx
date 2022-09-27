@@ -81,110 +81,14 @@ function About() {
               </div>
               <div className="col-md-4">
                 <div className="mb-4">
-                  <h5>End Date</h5>
-                  <p>
-                    22 December 2018{" "}
-                    <small className="text-muted">1:00 PM</small>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="mb-4">
-                  <h5>Budget</h5>
-                  <p>$15,800</p>
+                  <h5>Email</h5>
+                  <p>sarthak.workplace@gmail.com</p>
                 </div>
               </div>
             </div>
-            <div id="tooltip-container">
-              <h5>Team Members:</h5>
-              <Link
-                to="/"
-                data-bs-container="#tooltip-container"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                className="d-inline-block"
-                data-bs-original-title="Mat Helme"
-              >
-                <img
-                  src="assets/images/users/avatar-6.jpg"
-                  className="rounded-circle img-thumbnail avatar-sm"
-                  alt="friend"
-                />
-              </Link>
-              <Link
-                to="/"
-                data-bs-container="#tooltip-container"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                className="d-inline-block"
-                data-bs-original-title="Michael Zenaty"
-              >
-                <img
-                  src="assets/images/users/avatar-7.jpg"
-                  className="rounded-circle img-thumbnail avatar-sm"
-                  alt="friend"
-                />
-              </Link>
-              <Link
-                to="/"
-                data-bs-container="#tooltip-container"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                className="d-inline-block"
-                data-bs-original-title="James Anderson"
-              >
-                <img
-                  src="assets/images/users/avatar-8.jpg"
-                  className="rounded-circle img-thumbnail avatar-sm"
-                  alt="friend"
-                />
-              </Link>
-              <Link
-                to="/"
-                data-bs-container="#tooltip-container"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                className="d-inline-block"
-                data-bs-original-title="Mat Helme"
-              >
-                <img
-                  src="assets/images/users/avatar-4.jpg"
-                  className="rounded-circle img-thumbnail avatar-sm"
-                  alt="friend"
-                />
-              </Link>
-              <Link
-                to="/"
-                data-bs-container="#tooltip-container"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                className="d-inline-block"
-                data-bs-original-title="Michael Zenaty"
-              >
-                <img
-                  src="assets/images/users/avatar-5.jpg"
-                  className="rounded-circle img-thumbnail avatar-sm"
-                  alt="friend"
-                />
-              </Link>
-              <Link
-                to="/"
-                data-bs-container="#tooltip-container"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                className="d-inline-block"
-                data-bs-original-title="James Anderson"
-              >
-                <img
-                  src="assets/images/users/avatar-3.jpg"
-                  className="rounded-circle img-thumbnail avatar-sm"
-                  alt="friend"
-                />
-              </Link>
-            </div>
-          </div>{" "}
+          </div>
           {/* end card-body*/}
-        </div>{" "}
+        </div>
         {/* end card*/}
         <div className="card">
           <div className="card-body">
@@ -245,10 +149,10 @@ function About() {
             </div>
             <div className="text-center mt-2">
               <Link to="/" className="text-danger">
-                Load more{" "}
+                Load more
               </Link>
             </div>
-          </div>{" "}
+          </div>
           {/* end card-body*/}
         </div>
       </div>
