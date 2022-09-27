@@ -12,7 +12,7 @@ function Search() {
   function setSearch(e) {
     setdataResult(
       datas.filter((i) => {
-        return i.name.indexOf(e.target.value) > -1;
+        return i.name.toLowerCase().indexOf(e.target.value) > -1;
       })
     );
   }
