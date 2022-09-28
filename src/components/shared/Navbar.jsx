@@ -147,7 +147,7 @@ function Navbar() {
                       <span>Mail</span>
                     </a>
                   </div>
-                </div>{" "}
+                </div>
                 {/* end row*/}
               </div>
             </div>
