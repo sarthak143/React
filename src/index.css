@@ -5,3 +5,12 @@
 .object-fit {
   object-fit: contain;
 }
+
+.tasks {
+  width: 17rem;
+}
+@media (min-width: 576px) {
+  .dropdown-md {
+    width: 240px;
+  }
+}

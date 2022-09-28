@@ -34,6 +34,24 @@ function Zomato() {
     <>
       <div className="container-fluid">
         <div className="row">
+          <div className="col-12">
+            <div className="page-title-box">
+              <div className="page-title-right">
+                <ol className="breadcrumb m-0">
+                  <li className="breadcrumb-item">
+                    <a href="#!">Homepage</a>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <a href="#!">Apps</a>
+                  </li>
+                  <li className="breadcrumb-item active">Zomato</li>
+                </ol>
+              </div>
+              <h4 className="page-title">Restaurant search app</h4>
+            </div>
+          </div>
+        </div>
+        <div className="row">
           <div className="card">
             <form>
               <div className="mb-3">
@@ -50,14 +68,14 @@ function Zomato() {
                       Dropdown
                     </button>
                     <div className="dropdown-menu">
-                      <a className="dropdown-item" href="#">
-                        Action
+                      <a className="dropdown-item" href="#!">
+                        delhi
                       </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
+                      <a className="dropdown-item" href="#!">
+                        Mumbai
                       </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
+                      <a className="dropdown-item" href="#!">
+                        pune
                       </a>
                     </div>
                     <input

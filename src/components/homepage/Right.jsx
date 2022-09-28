@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function About() {
+function Right() {
   return (
     <>
       <div>
@@ -146,75 +146,19 @@ function About() {
               <div className="col-md-4">
                 <div className="mb-4">
                   <h5>Email</h5>
-                  <p>sarthak.workplace@gmail.com</p>
+                  <a
+                    href="#!"
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        "sarthak.workplace@gmail.com"
+                      );
+                    }}
+                  >
+                    sarthak.workplace@gmail.com
+                    <i className="mdi mdi-content-copy"></i>
+                  </a>
                 </div>
               </div>
-            </div>
-          </div>
-          {/* end card-body*/}
-        </div>
-        {/* end card*/}
-        <div className="card">
-          <div className="card-body">
-            <h4 className="mt-0 mb-3">Comments (258)</h4>
-            <textarea
-              className="form-control form-control-light mb-2"
-              placeholder="Write message"
-              id="example-textarea"
-              rows={3}
-              defaultValue={""}
-            />
-            <div className="text-end">
-              <div className="btn-group mb-2">
-                <button
-                  type="button"
-                  className="btn btn-link btn-sm text-muted font-18"
-                >
-                  <i className="dripicons-paperclip" />
-                </button>
-              </div>
-              <div className="btn-group mb-2 ms-2">
-                <button type="button" className="btn btn-primary btn-sm">
-                  Submit
-                </button>
-              </div>
-            </div>
-            <div className="d-flex align-items-start mt-2">
-              <img
-                className="me-3 avatar-sm rounded-circle"
-                src="assets/images/users/avatar-3.jpg"
-                alt="Generic placeholder "
-              />
-              <div className="w-100 overflow-hidden">
-                <h5 className="mt-0">Jeremy Tomlinson</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
-                <div className="d-flex align-items-start mt-3">
-                  <Link className="pe-3" to="/">
-                    <img
-                      src="assets/images/users/avatar-4.jpg"
-                      className="avatar-sm rounded-circle"
-                      alt="Generic placeholder "
-                    />
-                  </Link>
-                  <div className="w-100 overflow-hidden">
-                    <h5 className="mt-0">Kathleen Thomas</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                    scelerisque ante sollicitudin. Cras purus odio, vestibulum
-                    in vulputate at, tempus viverra turpis. Fusce condimentum
-                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-                    in faucibus.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="text-center mt-2">
-              <Link to="/" className="text-danger">
-                Load more
-              </Link>
             </div>
           </div>
           {/* end card-body*/}
@@ -224,4 +168,4 @@ function About() {
   );
 }
 
-export default About;
+export default Right;
