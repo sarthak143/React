@@ -6,7 +6,7 @@ function LeftMenu() {
         {/* LOGO */}
         <Link to="/" className="logo text-center logo-light">
           <span className="logo-lg">
-            <img src="assets/images/logo.png" alt="user" height={16} />
+            <img src="assets/images/logo.png" alt="user" height={50} />
           </span>
           <span className="logo-sm">
             <img src="assets/images/logo_sm.png" alt="user" height={16} />

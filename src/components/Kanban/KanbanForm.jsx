@@ -167,12 +167,9 @@ function KanbanForm({ handleAdd }) {
                         className="form-select form-control-light"
                         id="task-priority"
                       >
-                        <option>Coderthemes</option>
-                        <option>Robert Carlile</option>
-                        <option>Louis Allen</option>
-                        <option>Sean White</option>
-                        <option>Riley Steele</option>
-                        <option>Zak Turnbull</option>
+                        <option>Sarthak Bansal</option>
+                        <option>Amit Singh</option>
+                        <option>Manish Kumar</option>
                       </select>
                     </div>
                   </div>
