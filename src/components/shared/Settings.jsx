@@ -210,7 +210,7 @@ function Settings() {
                           <i className="mdi mdi-basket me-1" /> Purchase Now
                         </a>
                       </div>
-                    </div>{" "}
+                    </div>
                     {/* end padding*/}
                   </div>
                 </div>

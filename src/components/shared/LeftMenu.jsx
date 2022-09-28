@@ -42,50 +42,6 @@ function LeftMenu() {
                   <div className="simplebar-content" style={{ padding: 0 }}>
                     {/*- Sidemenu */}
                     <ul className="side-nav">
-                      <li className="side-nav-title side-nav-item">
-                        Navigation
-                      </li>
-                      <li className="side-nav-item menuitem-active">
-                        <Link
-                          data-bs-toggle="collapse"
-                          to="#sidebarDashboards"
-                          aria-expanded="false"
-                          aria-controls="sidebarDashboards"
-                          className="side-nav-link"
-                        >
-                          <i className="uil-home-alt" />
-                          <span className="badge bg-success float-end">4</span>
-                          <span> Dashboards </span>
-                        </Link>
-                        <div className="collapse show" id="sidebarDashboards">
-                          <ul className="side-nav-second-level">
-                            <li>
-                              <Link to="dashboard-analytics.html">
-                                Analytics
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="/">Ecommerce</Link>
-                            </li>
-                            <li className="menuitem-active">
-                              <Link
-                                to="dashboard-projects.html"
-                                className="active"
-                              >
-                                Projects
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="dashboard-wallet.html">
-                                E-Wallet{" "}
-                                <span className="badge rounded bg-danger font-10 float-end">
-                                  New
-                                </span>
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
                       <li className="side-nav-title side-nav-item">Apps</li>
                       <li className="side-nav-item">
                         <Link to="zomato" className="side-nav-link">
