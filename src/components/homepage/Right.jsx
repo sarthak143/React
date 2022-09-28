@@ -55,20 +55,84 @@ function About() {
             </div>
 
             <h5>Sarthak Bansal</h5>
-            <p className="text-muted mb-2">
+            <p className="text-muted mb-4">
               I like to develop webites and I am working from past 6 years with
               various clients helping them achieving their website requirements.
               I have worked on website relating to various domains <i>viz. </i>
               Finance , Healthcare , E-commerce , Hotels , Telecom , Logistics
               etc.
             </p>
-            <p className="text-muted mb-4">
-              Voluptates, illo, iste itaque voluptas corrupti ratione
-              reprehenderit magni similique? Tempore, quos delectus asperiores
-              libero voluptas quod perferendis! Voluptate, quod illo rerum?
-              Lorem ipsum dolor sit amet. With supporting text below as a
-              natural lead-in to additional contenposuere erat a ante.
-            </p>
+
+            <div className="tab-content">
+              <div className="tab-pane active" id="aboutme">
+                <h5 className="text-uppercase">
+                  <i className="mdi mdi-briefcase me-1" />
+                  Experience
+                </h5>
+                <div className="timeline-alt pb-0">
+                  <div className="timeline-item">
+                    <i className="mdi mdi-circle bg-info-lighten text-info timeline-icon" />
+                    <div className="timeline-item-info">
+                      <h5 className="mt-0 mb-1">Associate technology L2</h5>
+                      <p className="font-14">
+                        American MNC's , Publicis Sapient
+                        <span className="ms-2 font-12">
+                          Year: 2021 - till now
+                        </span>
+                      </p>
+                      <p className="text-muted mt-2 mb-0 pb-3">
+                        Here I worked with two Clients on Frontend part of
+                        projects in agile methology Collaborate with others to
+                        craft clear user stories, design tests for prototypes
+                        and products, and continuously deliver product
+                        enhancements. Develop high-quality, well-documented, and
+                        efficient code. Align and integrate with architects,
+                        designers and other stakeholders.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-item">
+                    <i className="mdi mdi-circle bg-primary-lighten text-primary timeline-icon" />
+                    <div className="timeline-item-info">
+                      <h5 className="mt-0 mb-1">
+                        Application development analyst
+                      </h5>
+                      <p className="font-14">
+                        Accenture
+                        <span className="ms-2 font-12">Year: 2019 - 21</span>
+                      </p>
+                      <p className="text-muted mt-2 mb-0 pb-3">
+                        I was part of 5-member team which was responsible for
+                        developing multiple websites within stringent time
+                        frame. I analyzed mockups from Zeplin or PSD and realize
+                        it into working website and Communicate with other
+                        developers across teams in UI development.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-item">
+                    <i className="mdi mdi-circle bg-info-lighten text-info timeline-icon" />
+                    <div className="timeline-item-info">
+                      <h5 className="mt-0 mb-1">
+                        Application development associate
+                      </h5>
+                      <p className="font-14">
+                        Accenture
+                        <span className="ms-2 font-12">Year: 2017 - 19</span>
+                      </p>
+                      <p className="text-muted mt-2 mb-0 pb-2">
+                        I contributed to cross functional teams as a fed
+                        developer here & developed quoting pages for insurance
+                        websites. Worked together with Back End team to design
+                        and develop functional, performing, and complete APIs
+                        that work with existing company software and products.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="row">
               <div className="col-md-4">
                 <div className="mb-4">
