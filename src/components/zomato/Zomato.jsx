@@ -16,6 +16,9 @@ function Zomato() {
     setSearchText(e.target.value);
     // console.log(searchText);
   }
+
+  // 7749b19667964b87a3efc739e254ada2 // backup key
+  //b05a4e1bf00dfb56e6e8664292297912
   const getResult = async (id, item) => {
     setSearching(true);
     const response = await fetch(
