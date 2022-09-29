@@ -11,5 +11,5 @@ uuid
 concurrently
 
 Developer - Sarthak Bansal
-contact - sarthak.tiet@gmail.com
+contact - sarthak.workplace@gmail.com
 linkedn - https://www.linkedin.com/in/sarthak143/

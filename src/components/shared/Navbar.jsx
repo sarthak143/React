@@ -152,7 +152,7 @@ function Navbar() {
                     <div className="col">
                       <a
                         className="dropdown-icon-item"
-                        href="mailto:sarthak.tiet@gmail.com"
+                        href="mailto:sarthak.workplace@gmail.com"
                       >
                         <img
                           src="assets/images/brands/g-suite.png"
