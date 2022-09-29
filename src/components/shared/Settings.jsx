@@ -203,7 +203,7 @@ function Settings() {
                           Reset to Default
                         </button>
                         <a
-                          href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/"
+                          href="https://themes.getbootstrap.com/product/Home-responsive-admin-dashboard-template/"
                           className="btn btn-danger mt-3"
                           target="_blank"
                         >

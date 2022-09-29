@@ -46,10 +46,10 @@ function Zomato() {
               <div className="page-title-right">
                 <ol className="breadcrumb m-0">
                   <li className="breadcrumb-item">
-                    <a href="#!">Homepage</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item">
-                    <a href="#!">Apps</a>
+                    <Link to="/">Apps</Link>
                   </li>
                   <li className="breadcrumb-item active">Zomato</li>
                 </ol>
@@ -61,10 +61,10 @@ function Zomato() {
         <div className="row">
           <div className="col-xl-4 col-lg-5">
             <div className="card  text-center">
-              <div className="card-body bg-primary">
+              <div className="card-body bg-dark">
                 <img
-                  src="assets/images/users/avatar-1.jpg"
-                  className="rounded-circle avatar-lg img-thumbnail"
+                  src="assets/images/food.png"
+                  className="rounded-circle avatar-lg "
                   alt="profile"
                 />
                 <h4 className="mb-0 text-white mt-2">

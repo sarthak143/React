@@ -119,7 +119,7 @@ function KanbanForm({ handleAdd }) {
                         className="form-select form-control-light"
                       >
                         <option>Select</option>
-                        <option>Hyper - Admin Dashboard</option>
+                        <option>Home - Admin Dashboard</option>
                         <option>CRM - Design &amp; Development</option>
                         <option>iOS - App Design</option>
                       </select>

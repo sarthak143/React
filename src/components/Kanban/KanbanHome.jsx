@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import Inprogress from "./Inprogress";
 import Done from "./Done";
 import Review from "./Review";
+import { Link } from "react-router-dom";
+
 function KanbanHome() {
   const [Taskdata, setTaskdata] = useState(TaskData);
 
@@ -32,10 +34,10 @@ function KanbanHome() {
               <div className="page-title-right">
                 <ol className="breadcrumb m-0">
                   <li className="breadcrumb-item">
-                    <a href="#!">Hyper</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item">
-                    <a href="#!">Tasks</a>
+                    <Link to="/">Apps</Link>
                   </li>
                   <li className="breadcrumb-item active">Kanban Board</li>
                 </ol>

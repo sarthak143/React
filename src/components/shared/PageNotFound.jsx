@@ -11,10 +11,10 @@ function PageNotFound() {
               <div className="page-title-right">
                 <ol className="breadcrumb m-0">
                   <li className="breadcrumb-item">
-                    <Link to="/">Hyper</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item">
-                    <Link to="/">Pages</Link>
+                    <Link to="/">Apps</Link>
                   </li>
                   <li className="breadcrumb-item active">404 Error</li>
                 </ol>

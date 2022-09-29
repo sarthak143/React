@@ -16,10 +16,8 @@ function App() {
       <div className="container-fluid">
         <div className="wrapper menuitem-active">
           <LeftMenu />
-          <div className="content-page">
-
+          <div className="content-page px-0">
             <Routes>
-
               <Route
                 path='/'
                 element={
