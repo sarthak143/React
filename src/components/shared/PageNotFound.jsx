@@ -44,9 +44,9 @@ function PageNotFound() {
               <Link className="btn btn-info mt-3" to="/">
                 <i className="mdi mdi-reply" /> Return Home
               </Link>
-            </div>{" "}
+            </div>
             {/* end /.text-center*/}
-          </div>{" "}
+          </div>
           {/* end col*/}
         </div>
         {/* end row */}
