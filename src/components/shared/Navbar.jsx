@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Search from "../search/Search";
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   // const [isSettingOpen, setisSettingOpen] = useState(true);
   function toggleLeftbar(openclose) {
     setIsOpen(openclose);
     if (openclose) {
-      document.body.removeAttribute("data-leftbar-compact-mode");
+      document.body.classList.add("sidebar-enable", "hide-menu");
     } else {
-      document.body.setAttribute("data-leftbar-compact-mode", "condensed");
+      document.body.classList.remove("sidebar-enable", "hide-menu");
     }
   }
 
@@ -17,9 +17,6 @@ function Navbar() {
     document.body.classList.toggle("end-bar-enabled");
   }
 
-  useEffect(() => {
-    toggleLeftbar(isOpen);
-  }, []);
   return (
     <>
       <div className="navbar-custom topnav-navbar topnav-navbar-dark">
@@ -222,7 +219,11 @@ function Navbar() {
               </div>
             </li>
           </ul>
-          <a href="#!" className="button-menu-mobile disable-btn">
+          <a
+            href="#!"
+            onClick={() => toggleLeftbar(!isOpen)}
+            className="button-menu-mobile disable-btn"
+          >
             <div className="lines">
               <span />
               <span />
@@ -230,12 +231,6 @@ function Navbar() {
             </div>
           </a>
 
-          <button
-            className="button-menu-mobile open-left"
-            onClick={() => toggleLeftbar(!isOpen)}
-          >
-            <i className="mdi mdi-menu" />
-          </button>
           <Search />
         </div>
       </div>
