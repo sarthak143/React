@@ -10,13 +10,14 @@ function SearchResult({ restaurantData }) {
             className="col-sm-6 col-lg-4"
           >
             <div
-              style={{ minHeight: "450px" }}
+              style={{ height: "283px" }}
               className="card ribbon-box d-block"
             >
               <img
                 className="card-img-top"
                 src={res.restaurant.thumb}
                 alt="Card  cap"
+                height="140"
               />
               <div className="card-body">
                 <div
@@ -37,8 +38,18 @@ function SearchResult({ restaurantData }) {
                   <i className="mdi mdi-account-star me-1"></i>
                   {res.restaurant.user_rating.aggregate_rating}
                 </div>
-                <h5 className="card-title">{res.restaurant.name}</h5>
-                <p className="card-text">{res.restaurant.location.address}</p>
+                <h5
+                  title={res.restaurant.name}
+                  className="card-title multi-ellipsis"
+                >
+                  {res.restaurant.name}
+                </h5>
+                <p
+                  title={res.restaurant.location.address}
+                  className="card-text multi-ellipsis"
+                >
+                  {res.restaurant.location.address}
+                </p>
                 {/* <a href="/" className="btn btn-primary">
                       Button
                     </a> */}

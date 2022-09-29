@@ -7,9 +7,17 @@ import SearchResult from "./SearchResult";
 // import { data } from "jquery";
 
 /* eslint-disable jsx-a11y/alt-text */
+
+const cities = {
+  Delhi: 1,
+  Mumbai: 3,
+  Bangalore: 4,
+  Pune: 5,
+  Hyderabad: 6,
+};
 function Zomato() {
   const [restaurantData, setrestaurantData] = useState([]);
-  const [city, setCity] = useState([]);
+  const [city, setCity] = useState("Delhi");
   const [searching, setSearching] = useState(false);
   const [searchText, setSearchText] = useState([]);
   function handleSearch(e) {
@@ -19,10 +27,11 @@ function Zomato() {
 
   // 7749b19667964b87a3efc739e254ada2 // backup key
   //b05a4e1bf00dfb56e6e8664292297912
-  const getResult = async (id, item) => {
+  const getResult = async (city, item) => {
     setSearching(true);
+    setCity(city);
     const response = await fetch(
-      `https://developers.zomato.com/api/v2.1/search?entity_id=${id}&entity_type=city&q=${item}&count=100',`,
+      `https://developers.zomato.com/api/v2.1/search?entity_id=${cities[city]}&entity_type=city&q=${item}&count=100',`,
       {
         method: "Get",
         headers: {
@@ -70,27 +79,30 @@ function Zomato() {
                 <h4 className="mb-0 text-white mt-2">
                   Find the best Restaurants
                 </h4>
-                <p className="text-white font-14">Food </p>
+                <p className="text-white font-14">
+                  {" "}
+                  {city ? city : "Select City"}
+                </p>
               </div>
               <div className="card-body ">
                 <div className="app-search">
                   <form>
                     <div className="input-group">
                       <button
-                        className="btn btn-primary dropdown-toggle"
+                        className="btn btn-dark dropdown-toggle"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        Dropdown
+                        {city ? city : "City"}
                       </button>
 
                       <div className="dropdown-menu">
                         <a
                           className="dropdown-item"
                           onClick={() => {
-                            setCity(1);
+                            setCity("Delhi");
                           }}
                           href="#!"
                         >
@@ -99,7 +111,7 @@ function Zomato() {
                         <a
                           className="dropdown-item"
                           onClick={() => {
-                            setCity(3);
+                            setCity("Mumbai");
                           }}
                           href="#!"
                         >
@@ -108,7 +120,7 @@ function Zomato() {
                         <a
                           className="dropdown-item"
                           onClick={() => {
-                            setCity(6);
+                            setCity("Hyderabad");
                           }}
                           href="#!"
                         >
@@ -117,7 +129,7 @@ function Zomato() {
                         <a
                           className="dropdown-item"
                           onClick={() => {
-                            setCity(5);
+                            setCity("Pune");
                           }}
                           href="#!"
                         >
@@ -126,7 +138,7 @@ function Zomato() {
                         <a
                           className="dropdown-item"
                           onClick={() => {
-                            setCity(4);
+                            setCity("Bangalore");
                           }}
                           href="#!"
                         >
@@ -153,7 +165,7 @@ function Zomato() {
                         className="input-group-text btn btn-dark"
                         type="submit"
                       >
-                        Search
+                        <i className="mdi mdi-magnify search-icon"></i>
                       </button>
                     </div>
                   </form>
@@ -164,7 +176,7 @@ function Zomato() {
                   <h4 className="font-13 text-uppercase">Recent Searches</h4>
                   <p className="text-muted mb-2 font-13">
                     <a
-                      onClick={() => getResult(1, "chai")}
+                      onClick={() => getResult("Delhi", "chai")}
                       href="#!"
                       className="btn btn-sm btn-link text-info font-13"
                     >
@@ -173,7 +185,7 @@ function Zomato() {
                   </p>
                   <p className="text-muted mb-2 font-13">
                     <a
-                      onClick={() => getResult(4, "Dosa")}
+                      onClick={() => getResult("Bangalore", "Dosa")}
                       href="#!"
                       className="btn btn-sm btn-link text-info font-13"
                     >
@@ -182,7 +194,7 @@ function Zomato() {
                   </p>
                   <p className="text-muted mb-2 font-13">
                     <a
-                      onClick={() => getResult(3, "pav")}
+                      onClick={() => getResult("Mumbai", "pav")}
                       href="#!"
                       className="btn btn-sm btn-link text-info font-13"
                     >
@@ -191,7 +203,7 @@ function Zomato() {
                   </p>
                   <p className="text-muted mb-2 font-13">
                     <a
-                      onClick={() => getResult(5, "icecream")}
+                      onClick={() => getResult("Pune", "icecream")}
                       href="#!"
                       className="btn btn-sm btn-link text-info font-13"
                     >
@@ -200,7 +212,7 @@ function Zomato() {
                   </p>
                   <p className="text-muted mb-2 font-13">
                     <a
-                      onClick={() => getResult(6, "idli")}
+                      onClick={() => getResult("Hyderabad", "idli")}
                       href="#!"
                       className="btn btn-sm btn-link text-info font-13"
                     >

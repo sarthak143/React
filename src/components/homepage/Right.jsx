@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Right() {
+  const [isCopied, setCopied] = useState(false);
   return (
     <>
       <div>
@@ -143,19 +145,47 @@ function Right() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="mb-4">
+              <div className="col-md-8">
+                <div className="mb-4" style={{ position: "relative" }}>
                   <h5>Email</h5>
                   <a
                     href="#!"
                     onClick={() => {
+                      setCopied(true);
+                      setTimeout(() => {
+                        setCopied(false);
+                      }, 1000);
                       navigator.clipboard.writeText(
                         "sarthak.workplace@gmail.com"
                       );
                     }}
                   >
                     sarthak.workplace@gmail.com
-                    <i className="mdi mdi-content-copy"></i>
+                    {isCopied ? (
+                      <span>
+                        <div
+                          className="tooltip fade show bs-tooltip-end"
+                          role="tooltip"
+                          data-popper-placement="right"
+                          style={{
+                            position: "absolute",
+                            top: "21px",
+                            left: "200px",
+                          }}
+                        >
+                          <div
+                            className="tooltip-arrow"
+                            style={{
+                              top: 0,
+                              transform: "translate3d(0px, 10px, 0px)",
+                            }}
+                          />
+                          <div className="tooltip-inner">Copied!!</div>
+                        </div>
+                      </span>
+                    ) : (
+                      <i className="mdi mdi-content-copy"></i>
+                    )}
                   </a>
                 </div>
               </div>
