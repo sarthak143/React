@@ -158,31 +158,6 @@ function Left() {
               </div>
             </div>
           </div>
-          <div className="card mb-0 shadow-none border">
-            <div className="p-2">
-              <div className="row align-items-center">
-                <div className="col-auto">
-                  <div className="avatar-sm">
-                    <span className="avatar-title bg-secondary text-light rounded">
-                      .MP4
-                    </span>
-                  </div>
-                </div>
-                <div className="col ps-0">
-                  <Link to="/" className="text-muted fw-bold">
-                    Admin-bug-report.mp4
-                  </Link>
-                  <p className="mb-0">7.05 MB</p>
-                </div>
-                <div className="col-auto">
-                  {/* Button */}
-                  <Link to="/" className="btn btn-link btn-lg text-muted">
-                    <i className="dripicons-download" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
