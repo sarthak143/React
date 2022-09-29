@@ -222,6 +222,14 @@ function Navbar() {
               </div>
             </li>
           </ul>
+          <a href="#!" className="button-menu-mobile disable-btn">
+            <div className="lines">
+              <span />
+              <span />
+              <span />
+            </div>
+          </a>
+
           <button
             className="button-menu-mobile open-left"
             onClick={() => toggleLeftbar(!isOpen)}
