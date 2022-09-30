@@ -127,7 +127,7 @@ function Navbar() {
                     <div className="col">
                       <a
                         className="dropdown-icon-item"
-                        href="https://github.com/sarthak143"
+                        href="https://github.com/sarthakworks"
                         target="_blank"
                         rel="noreferrer"
                       >
