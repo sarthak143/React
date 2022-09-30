@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Resume from "../assets/downloads/Sarthak_Resume.pdf";
 import AWS from "../assets/downloads/AWS.pdf";
 function Left() {
-  const GAME = "https://sarthak143.github.io/2048/";
+  const GAME = "https://sarthakworks.github.io/2048/";
   const EXTENSION =
     "https://chrome.google.com/webstore/detail/dark-mode-kali/chbdmdapmeflnkgibpgbdcblndooljff?hl=en-GB";
   return (

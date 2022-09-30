@@ -12,4 +12,4 @@ concurrently
 
 Developer - Sarthak Bansal
 contact - sarthak.workplace@gmail.com
-linkedn - https://www.linkedin.com/in/sarthak143/
+linkedn - https://www.linkedin.com/in/sarthakworks/
