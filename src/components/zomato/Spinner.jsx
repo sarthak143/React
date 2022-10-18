@@ -4,7 +4,7 @@ function Spinner() {
     // <div className="h-75 flex-center f-column">
     //   <div className="col-lg-8">
     //     <div className="text-center flex-center f-column ">
-    //       <div class="loader"></div>
+    //       <div className="loader"></div>
     //       <h1 className="text-error mt-4">Searching</h1>
     //     </div>
     //     {/* end /.text-center*/}

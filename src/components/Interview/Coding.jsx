@@ -6,7 +6,7 @@ function Coding() {
   return (
     <>
       <div className="row">
-        <div className="col-lg-10">
+        <div className="col-lg-12">
           <div className="row">
             <Card width={half} title="Infinite currying">
               <img
@@ -32,12 +32,12 @@ function Coding() {
                 src="/assets/images/code/reverse.png"
               />
             </Card>
-            <Card width={half} title="Reverse a string">
+            <Card width={half} title="Sorting a Array">
               <img
                 className="img-fit"
                 alt="infinite curring"
                 width="100"
-                src="/assets/images/code/reverse.png"
+                src="/assets/images/code/sortingArray.png"
               />
             </Card>
             <Card width={full} title="Search List Javascript">

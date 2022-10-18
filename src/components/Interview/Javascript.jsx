@@ -7,7 +7,7 @@ function Javascript() {
   return (
     <>
       <div className="row">
-        <div className="col-lg-10">
+        <div className="col-lg-12">
           <div className="row">
             <Card width={full} title="closures">
               <ul>

@@ -12,7 +12,7 @@ function Card({ row, width, title, children }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-xxl-2"></div>
+          {/* <div className="col-lg-4 col-xxl-2"></div> */}
         </div>
       </>
     );

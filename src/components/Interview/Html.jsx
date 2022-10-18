@@ -6,14 +6,14 @@ function Html() {
   return (
     <>
       <div className="row">
-        <div className="col-lg-10">
+        <div className="col-lg-12">
           <div className="row">
             <Card width={half} title="Local storage">
               <ul>
                 <li>Browser storage to store data in key value pair</li>
                 <li>10MB data can be stored with No expiration date</li>
                 <li>
-                  <p class="text-primary fw-bold mb-1 d-block">
+                  <p className="text-primary fw-bold mb-1 d-block">
                     localStorage.setItem("lastname", "bansal");
                     <br />
                     localStorage.getItem("lastname"); <br />
@@ -28,7 +28,7 @@ function Html() {
                 <li>Similar to Local storage but for a session only</li>
                 <li>data will be removed once tab or browser is closed</li>
                 <li>
-                  <p class="text-primary fw-bold mb-1 d-block">
+                  <p className="text-primary fw-bold mb-1 d-block">
                     sessionStorage.setItem("lastname", "bansal");
                     <br />
                     sessionStorage.getItem("lastname"); <br />
@@ -49,11 +49,11 @@ function Html() {
                   cookie will get expired at the end of the browser session.
                 </li>
                 <li>
-                  <span class="text-primary fw-bold mb-1 ">Uses : </span>
+                  <span className="text-primary fw-bold mb-1 ">Uses : </span>
                   Storing User Preferences , jwt tokens , session status
                 </li>
                 <li>
-                  <p class="text-primary fw-bold mb-1 d-block">
+                  <p className="text-primary fw-bold mb-1 d-block">
                     document.cookie="name=sarthak"
                   </p>
                 </li>
@@ -64,7 +64,7 @@ function Html() {
                 <li>Can store both objects and key-value pairs Up to 250MB</li>
                 <li>Do not have expiration time unless explicit deletion</li>
                 <li>
-                  <span class="text-primary fw-bold mb-1 ">Uses : </span>
+                  <span className="text-primary fw-bold mb-1 ">Uses : </span>
                   When need to store a large number of objects which is
                   time-consuming and a lag on performance to convert to string
                   for Local Storage every time.

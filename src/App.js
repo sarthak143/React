@@ -13,6 +13,7 @@ import Javascript from './components/Interview/Javascript'
 import Html from './components/Interview/Html'
 import React from './components/Interview/React'
 import Coding from './components/Interview/Coding'
+import Reactcode from './components/Interview/Reactcode'
 // import Search from './components/search/Search'
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
                 <Route path="code" element={<Coding />}></Route>
                 <Route path="react" element={<React />}></Route>
                 <Route path="html" element={<Html />}></Route>
+                <Route path="reactcode" element={<Reactcode />}></Route>
               </Route>
 
 
