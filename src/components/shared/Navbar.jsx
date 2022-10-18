@@ -24,13 +24,13 @@ function Navbar() {
           <Link to="/" className="topnav-logo">
             <span className="topnav-logo-lg">
               <img
-                src="assets/images/logo.png"
+                src="/assets/images/logo.png"
                 alt="sarthak logo"
                 height={45}
               />
             </span>
             <span className="topnav-logo-sm">
-              <img src="assets/images/logo_sm.png" alt="das" height={16} />
+              <img src="/assets/images/logo_sm.png" alt="das" height={16} />
             </span>
           </Link>
 
@@ -118,7 +118,7 @@ function Navbar() {
                         rel="noreferrer"
                       >
                         <img
-                          src="assets/images/brands/linkedin.png"
+                          src="/assets/images/brands/linkedin.png"
                           alt="linkedin"
                         />
                         <span>Linkedin</span>
@@ -132,7 +132,7 @@ function Navbar() {
                         rel="noreferrer"
                       >
                         <img
-                          src="assets/images/brands/github.png"
+                          src="/assets/images/brands/github.png"
                           alt="Github"
                         />
                         <span>GitHub</span>
@@ -143,7 +143,7 @@ function Navbar() {
                     <div className="col">
                       <a className="dropdown-icon-item" href="/">
                         <img
-                          src="assets/images/brands/dropbox.png"
+                          src="/assets/images/brands/dropbox.png"
                           alt="dropbox"
                         />
                         <span>Dropbox</span>
@@ -155,7 +155,7 @@ function Navbar() {
                         href="mailto:sarthak.workplace@gmail.com"
                       >
                         <img
-                          src="assets/images/brands/g-suite.png"
+                          src="/assets/images/brands/g-suite.png"
                           alt="G Suite"
                         />
                         <span>Mail</span>
@@ -186,7 +186,7 @@ function Navbar() {
               >
                 <span className="account-user-avatar">
                   <img
-                    src="assets/images/users/avatar-2.png"
+                    src="/assets/images/users/avatar-2.png"
                     alt="user"
                     className="rounded-circle"
                   />

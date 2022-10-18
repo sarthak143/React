@@ -11,7 +11,7 @@ function Interview() {
             <div className="page-title-box">
               <h4 className="mt-4">
                 <div className="row">
-                  <div className="col-xxl-10 col-lg-8">
+                  <div className="col-lg-12">
                     <div className="card">
                       <div className="card-body">
                         <InterviewTop />

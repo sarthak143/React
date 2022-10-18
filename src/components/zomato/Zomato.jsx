@@ -72,7 +72,7 @@ function Zomato() {
             <div className="card  text-center">
               <div className="card-body bg-dark">
                 <img
-                  src="assets/images/food.png"
+                  src="/assets/images/food.png"
                   className="rounded-circle avatar-lg "
                   alt="profile"
                 />

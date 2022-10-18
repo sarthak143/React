@@ -4,7 +4,7 @@ function InitialPage() {
       <div className="col-lg-8">
         <div className="text-center">
           <img
-            src="assets/images/file-searching.svg"
+            src="/assets/images/file-searching.svg"
             height={90}
             alt="File not found "
           />

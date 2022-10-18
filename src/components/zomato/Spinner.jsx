@@ -21,7 +21,7 @@ function Spinner() {
               aria-hidden="true"
             >
               <img
-                src="assets/images/loadingfood2.gif"
+                src="/assets/images/loadingfood2.gif"
                 className="card-img-top"
                 alt="..."
               />
