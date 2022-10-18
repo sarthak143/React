@@ -7,6 +7,12 @@ import Zomato from './components/zomato/Zomato'
 import Navbar from './components/shared/Navbar'
 import Settings from './components/shared/Settings'
 import KanbanHome from './components/Kanban/KanbanHome'
+// import Javascript from './components/Interview/Javascript'
+import Interview from './components/Interview/Interview'
+import Javascript from './components/Interview/Javascript'
+import Html from './components/Interview/Html'
+import React from './components/Interview/React'
+import Coding from './components/Interview/Coding'
 // import Search from './components/search/Search'
 
 function App() {
@@ -30,6 +36,18 @@ function App() {
                 path="/Kanban"
                 element={<KanbanHome />}
               />
+              <Route
+                path="Interview"
+                element={<Interview />}
+              >
+                <Route path="" element={<Javascript />}></Route>
+                <Route path="javascript" element={<Javascript />}></Route>
+                <Route path="code" element={<Coding />}></Route>
+                <Route path="react" element={<React />}></Route>
+                <Route path="html" element={<Html />}></Route>
+              </Route>
+
+
               {/* <Route
               path="/search"
               element={<Search />}

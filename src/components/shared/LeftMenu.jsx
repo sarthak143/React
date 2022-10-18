@@ -7,7 +7,7 @@ function LeftMenu() {
         <div className="leftbar-user">
           <Link to="/">
             <img
-              src="assets/images/users/avatar-2.png"
+              src="/assets/images/users/avatar-2.png"
               alt="user"
               height={82}
               className="rounded-circle shadow-sm"
@@ -33,12 +33,12 @@ function LeftMenu() {
               <span> Kanban Board </span>
             </Link>
           </li>
-          {/* <li className="side-nav-item">
-            <Link to="search" className="side-nav-link">
+          <li className="side-nav-item">
+            <Link to="Interview" className="side-nav-link">
               <i className="uil-search" />
-              <span> Search </span>
+              <span> Interview </span>
             </Link>
-          </li>*/}
+          </li>
           <li className="side-nav-item">
             <Link to="error" className="side-nav-link">
               <i className="uil-shield-exclamation" />
