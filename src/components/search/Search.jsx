@@ -1,12 +1,7 @@
 import React, { useState } from "react";
+import datas from "./datas";
+import { Link } from "react-router-dom";
 function Search() {
-  var datas = [
-    { name: "Zomato" },
-    { name: "Kanban" },
-    { name: "Error" },
-    { name: "Sarthak" },
-  ];
-
   const [dataResult, setdataResult] = useState(datas);
   const [isdropdown, setDropdown] = useState(false);
   function setSearch(e) {
@@ -26,7 +21,11 @@ function Search() {
               name="search"
               onChange={setSearch}
               onFocus={(e) => setDropdown(true)}
-              onBlur={(e) => setDropdown(false)}
+              onBlur={(e) =>
+                setTimeout(() => {
+                  setDropdown(false);
+                }, 500)
+              }
               type="text"
               className="form-control"
               placeholder="Search ..."
@@ -52,10 +51,14 @@ function Search() {
           </div>
           {dataResult.map((data, i) => {
             return (
-              <a key={i} href="/" className="dropdown-item notify-item">
+              <Link
+                key={i}
+                to={data.link}
+                className="dropdown-item notify-item"
+              >
                 <i className="uil-notes font-16 me-1" />
                 <span>{data.name}</span>
-              </a>
+              </Link>
             );
           })}
         </div>

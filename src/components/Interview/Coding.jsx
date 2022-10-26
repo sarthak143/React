@@ -24,6 +24,22 @@ function Coding() {
                 src="/assets/images/code/fib.png"
               />
             </Card>
+            <Card width={half} title="Palindrome">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/palindrome.png"
+              />
+            </Card>
+            <Card width={half} title="Anagram">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/Anagram.png"
+              />
+            </Card>
             <Card width={half} title="Reverse a string">
               <img
                 className="img-fit"
@@ -81,6 +97,22 @@ function Coding() {
                 alt="infinite curring"
                 width="100"
                 src="/assets/images/code/shuffle.png"
+              />
+            </Card>
+            <Card width={half} title="Finding Number of vowels in string">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/findingvowels.png"
+              />
+            </Card>
+            <Card width={half} title="Panagram">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/panagram.png"
               />
             </Card>
             <Card width={full} title="Output Based javascript question">
