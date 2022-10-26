@@ -48,6 +48,41 @@ function Coding() {
                 src="/assets/images/code/search.png"
               />
             </Card>
+            <Card
+              width={half}
+              title="Print active names in ascending order of age from object"
+            >
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/PrintNameSortAge.png"
+              />
+            </Card>
+            <Card width={half} title="Remove Duplicate from array">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/removeduplicate.png"
+              />
+            </Card>
+            <Card width={half} title="Range Creator">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/rangecreator.png"
+              />
+            </Card>
+            <Card width={half} title="Shuffle Array Randomly">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/shuffle.png"
+              />
+            </Card>
             <Card width={full} title="Output Based javascript question">
               <ul>
                 <li>
