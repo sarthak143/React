@@ -1,14 +1,46 @@
-import { Link } from "react-router-dom";
-
+// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function InterviewTop() {
+  let activeStyle = {
+    textDecoration: "underline",
+  };
+
+  let activeClassName = "underline";
+
   return (
     <>
       <div className="flex-space-evenly">
-        <Link to="html">HTML / CSS</Link>
-        <Link to="javascript">JAVASCRIPT</Link>
-        <Link to="code">JS CODING</Link>
-        <Link to="react">REACT</Link>
-        <Link to="reactcode">REACT Coding</Link>
+        <NavLink
+          to="html"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          HTML / CSS
+        </NavLink>
+        <NavLink
+          to="javascript"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          JAVASCRIPT
+        </NavLink>
+
+        <NavLink
+          to="code"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          JS CODING
+        </NavLink>
+        <NavLink
+          to="react"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          REACT
+        </NavLink>
+        <NavLink
+          to="Webpack"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Webpack
+        </NavLink>
       </div>
     </>
   );
