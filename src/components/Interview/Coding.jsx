@@ -24,6 +24,14 @@ function Coding() {
                 src="/assets/images/code/fib.png"
               />
             </Card>
+            <Card width={half} title="factorial Memoization">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/factorial.png"
+              />
+            </Card>
             <Card width={half} title="Palindrome">
               <img
                 className="img-fit"
