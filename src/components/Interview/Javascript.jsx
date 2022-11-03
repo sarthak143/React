@@ -216,7 +216,25 @@ function Javascript() {
               </p>
             </Card>{" "}
             <Card width={half} title="Prototype inheritance">
-              <h5 className="text-danger">in progress</h5>
+              <p>
+                Every objectin Javascript contains an internal property known as
+                [[Prototype]]. The Prototypal Inheritance is a feature in
+                javascript used to add methods and properties in objects. It is
+                a method by which an object can inherit the properties and
+                methods of another object. Traditionally, in order to get and
+                set the [[Prototype]] of an object, we use Object.getPrototypeOf
+                and Object.setPrototypeOf. Nowadays, in modern language, it is
+                being set using __proto__.
+              </p>
+              <p className="text-danger">
+                ChildObject.__proto__ = ParentObject
+              </p>
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/js/proto.png"
+              />
             </Card>{" "}
             <Card width={half} title="ES6 Features">
               <ul>
@@ -267,10 +285,41 @@ function Javascript() {
                     successfull/rejected: meaning that the operation failed.
                   </li>
                 </ol>
-              </ul>
+              </ul>{" "}
+              <h5>Creating a promise</h5>
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/js/promise1.png"
+              />
+              <h5>Fetching api using then()</h5>
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/js/promise2.png"
+              />
             </Card>{" "}
             <Card width={half} title="Async / Await">
-              <h5 className="text-danger">in progress</h5>
+              <p>
+                {" "}
+                The purpose of async/await is to simplify the syntax necessary
+                to consume promise-based APIs
+              </p>
+              <p>
+                {" "}
+                Using Async/Await syntax, a promise-based asynchronous code can
+                be written in a synchronous format which saves a lot of time and
+                code becomes scalable.
+              </p>
+              <h5>Fetching api using Async/Await</h5>
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/js/asyncawait.png"
+              />
             </Card>{" "}
             <Card width={half} title="Arrow Functions">
               <p>more convienient and short way to write function in es6</p>
@@ -292,7 +341,7 @@ function Javascript() {
             <Card width={half} title="This Keyword">
               <h5 className="text-danger">in progress</h5>
             </Card>{" "}
-            <Card width={full} title="Currying">
+            <Card width={half} title="Currying">
               <ul>
                 <li>
                   Currying is a transformation of functions that translates a
