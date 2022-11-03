@@ -339,7 +339,25 @@ function Javascript() {
               </p>
             </Card>{" "}
             <Card width={half} title="This Keyword">
-              <h5 className="text-danger">in progress</h5>
+              <ul>
+                <li>In JavaScript, the this keyword refers to an object.</li>
+                <li>In an object method, this refers to the object.</li>
+                <li>When used alone, this refers to the global object.</li>
+                <li>In a function, this refers to the global object</li>
+                <li>In a function, in strict mode, this is undefined.</li>
+                <li>
+                  In an event, this refers to the element that received the
+                  event.
+                </li>
+                <li>
+                  Methods like call(), apply(), and bind() can refer this to any
+                  object.
+                </li>
+                <li>
+                  in arrow function this refers to object scope from where it
+                  isinvoked mostly global scope {}
+                </li>
+              </ul>
             </Card>{" "}
             <Card width={half} title="Currying">
               <ul>

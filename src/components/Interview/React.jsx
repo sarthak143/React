@@ -243,22 +243,17 @@ function React() {
             <Card width={half} title="Class vs Functional Components">
               <h5 className="text-danger">in progress</h5>
             </Card>
-            <Card width={half} title="Default props">
-              <h5 className="text-danger">in progress</h5>
-            </Card>
-            <Card width={half} title="PropTypes typechecking">
-              <h5 className="text-danger">in progress</h5>
+
+            <Card width={half} title="PropTypes typechecking | Default props">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/react/type_default.png"
+              />
             </Card>
             <Card width={full} title="Lazy Loading">
-              <ul>
-                <li>
-                  <span className="text-primary fw-bold mb-1 ">
-                    usestate() :{" "}
-                  </span>
-                  Memory leaks as data in closure is not garbage collected
-                  automatically
-                </li>
-              </ul>
+              <h5 className="text-danger">in Progress</h5>
             </Card>
             <Card
               width={half}
