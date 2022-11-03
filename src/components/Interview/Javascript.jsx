@@ -65,6 +65,233 @@ function Javascript() {
                 </li>
               </ul>
             </Card>{" "}
+            <Card width={half} title="Event Bubbling vs Event capturing">
+              <ul>
+                <h5>
+                  The standard DOM Events describes 3 phases of event
+                  propagation:
+                </h5>
+                <ol>
+                  <li>Capturing phase - the event goes down to the element.</li>
+                  <li>Target phase - the event reached the target element.</li>
+                  <li>
+                    Bubbling phase - the event bubbles up from the element.
+                  </li>
+                </ol>
+                <li>
+                  <span className="text-primary fw-bold mb-1 ">
+                    Event Bubbling(default) :
+                  </span>{" "}
+                  When an event happens on an element, it first runs the
+                  handlers on it, then on its parent, then all the way up on
+                  other ancestors.
+                </li>
+                <li>
+                  <span className="text-primary fw-bold mb-1 ">
+                    Event capturing :
+                  </span>{" "}
+                  In event capturing, an event propagates from the outermost
+                  element to the target element.
+                  <p className="text-danger">
+                    elem.addEventListener(...,{"{"} capture: true{"}"})
+                  </p>
+                </li>
+              </ul>
+            </Card>{" "}
+            <Card
+              width={half}
+              title="stop bubbling stopPropagation()  | cancel event preventDefault()"
+            >
+              <ul>
+                <li>
+                  <span className="text-primary fw-bold mb-1 ">
+                    event.stopPropagation() :
+                  </span>{" "}
+                  A bubbling event goes from the target element straight up to
+                  html tag or even document object. But any handler may decide
+                  that the event has been fully processed and stop the bubbling.
+                  The method for it is event.stopPropagation().
+                </li>
+                <li>
+                  <span className="text-primary fw-bold mb-1 ">
+                    event.preventDefault()
+                  </span>{" "}
+                  The preventDefault() method cancels the event if it is
+                  cancelable, meaning that the default action that belongs to
+                  the event will not occur.
+                  <ol>
+                    <li>
+                      Clicking on a "Submit" button, prevent it from submitting
+                      a form
+                    </li>
+                    <li>
+                      {" "}
+                      Clicking on a link, prevent the link from following the
+                      URL
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </Card>{" "}
+            <Card width={half} title="synthetic events in ReactJS">
+              <p>
+                HTML defines a set of events, and JavaScript uses event handlers
+                to manage these events. React also implements event handlers,
+                such as onClick, onMouseMove, onLoad, onError, etc. React’s
+                event handlers are named with camelCase APIs, while JavaScript
+                event handlers are named with lowercase APIs.
+              </p>
+              <p>
+                In order to work as a cross-browser application, React has
+                created a wrapper same as the native browser in order to avoid
+                creating multiple implementations for multiple methods for
+                multiple browsers, creating common names for all events across
+                browsers. Another benefit is that it increases the performance
+                of the application as React reuses the event object.
+              </p>
+
+              <p>
+                ‘e’ is a synthetic event in e.stopPropagation(), a cross-browser
+                object. It is made with a wrapper around the actual event of the
+                browser.{" "}
+              </p>
+            </Card>{" "}
+            <Card width={half} title="event delegation">
+              <p>
+                Capturing and bubbling allow us to implement one of the most
+                powerful event handling patterns called event delegation.
+              </p>
+              <p>
+                {" "}
+                Event delegation allows us to avoid adding multiple event
+                listeners to multiple child nodes; instead, the event listener
+                is added to one parent. That event listener analyzes bubbled
+                events to find a match on child elements.
+              </p>
+              <p>
+                The <span className="text-danger"> e.target.nodeName </span>
+                property of the .target allows us to identify a specific node.
+                If our parent element contains more than one child element then
+                we can identify specific elements by using the .nodeName
+                property.
+              </p>
+            </Card>{" "}
+            <Card width={half} title="Debouncing and throttling">
+              <h5 className="text-primary">Debouncing</h5>
+              <p>
+                Debounce function limits the execution of a function call and
+                waits for a certain amount of time before running it after the
+                event.(Function execution occurs after 1sec after last click)
+              </p>
+              <h5 className="text-primary">Throttling</h5>
+              <p>
+                Throttling is used to call a function after every millisecond or
+                a particular interval of time only the first click is executed
+                immediately.(first click immediately execute function, next
+                click will execute after given delay)
+              </p>
+            </Card>{" "}
+            <Card width={half} title="Generator functions">
+              <p>
+                Generators can "yield" multiple values, one after another,
+                on-demand nstead return one value and then stopping execution.
+              </p>
+              <p>
+                The yield expression returns a value. However, unlike the return
+                statement, it doesn't terminate the program. That's why you can
+                continue executing code from the last yielded position
+              </p>
+              <p className="text-danger">
+                function* generateSequence() {"{"}
+                yield 1; yield 2; return 3;
+                {"}"}
+              </p>
+              <p className="text-danger">const generator = generatorFunc();</p>{" "}
+              <span>
+                //A generator object named is created. and each yield can be
+                executed by .next()
+              </span>
+              <p className="text-danger">
+                console.log(generator.next().value;);
+              </p>
+            </Card>{" "}
+            <Card width={half} title="Prototype inheritance">
+              <h5 className="text-danger">in progress</h5>
+            </Card>{" "}
+            <Card width={half} title="ES6 Features">
+              <ul>
+                <li className="text-primary">The let and const keyword</li>
+                <li className="text-primary">Arrow Functions</li>
+                <li className="text-primary">Spread and Rest Operator</li>
+                <li className="text-primary">For/of loop for array</li>
+                <li className="text-primary">Promises</li>
+                <li className="text-primary">Default parameters</li>
+                <li className="text-primary">Template Literals</li>
+                <li className="text-primary">
+                  Destructuring Assignment [a,b]=[b,a]
+                </li>
+                <li className="text-primary">
+                  Modules (earlier commonjs with require keyword)
+                </li>
+              </ul>
+            </Card>{" "}
+            <Card width={half} title="Callbacks">
+              <p>
+                Functions executes in sequence they are called, To have better
+                control over sequence of executon of various function
+                interdependent on each other we can pass then as argumanet to
+                each other. The benefit of using a callback function is that you
+                can wait for the result of a previous function call and then
+                execute another function call.
+              </p>
+
+              <p>
+                Disadvantages is callback hell and inversion of control. better
+                to use Promise
+              </p>
+            </Card>{" "}
+            <Card width={half} title="Promise">
+              <ul>
+                <li>
+                  The Promise object represents the eventual completion (or
+                  failure) of an asynchronous operation and its resulting value.
+                </li>
+                <h5>A Promise can have 3 states:</h5>
+                <ol>
+                  <li>
+                    {" "}
+                    pending: initial state, neither fulfilled nor rejected.
+                  </li>
+                  <li> fulfilled: meaning that the operation was completed</li>
+                  <li>
+                    successfull/rejected: meaning that the operation failed.
+                  </li>
+                </ol>
+              </ul>
+            </Card>{" "}
+            <Card width={half} title="Async / Await">
+              <h5 className="text-danger">in progress</h5>
+            </Card>{" "}
+            <Card width={half} title="Arrow Functions">
+              <p>more convienient and short way to write function in es6</p>
+              <p>
+                if you have only one parameter, you can skip the parentheses ()
+              </p>
+              <p>
+                if only one value is return in 1 statement skip {} braces and
+                return keyword
+              </p>
+              <p className="text-danger">const any = i => i+1; </p>
+              <p>
+                with arrow functions there are no binding of this keyword to
+                owner object.With arrow functions the this keyword always
+                represents the object that defined/invoked the arrow function.
+                Mostly it is Global object
+              </p>
+            </Card>{" "}
+            <Card width={half} title="This Keyword">
+              <h5 className="text-danger">in progress</h5>
+            </Card>{" "}
             <Card width={full} title="Currying">
               <ul>
                 <li>

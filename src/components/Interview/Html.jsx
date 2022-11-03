@@ -71,8 +71,17 @@ function Html() {
                 </li>
               </ul>
             </Card>
-            <Card width={half} title="Local storage">
-              Html
+            <Card width={half} title="Accessibility">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Flexbox">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Grid Layout">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Browser Api">
+              <h5 className="text-danger">in progress</h5>
             </Card>
           </div>
         </div>

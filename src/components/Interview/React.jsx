@@ -108,6 +108,42 @@ function React() {
                 </li>
               </ul>
             </Card>
+            <Card width={full} title="Custom Hooks">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={full} title="Reconciliation">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={full} title="Performance improvements">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Pure Components">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Middleware Thunk">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Redux">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Context Api">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Reducers">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Higher order Components">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Class vs Functional Components">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Default props">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="PropTypes typechecking">
+              <h5 className="text-danger">in progress</h5>
+            </Card>
             <Card width={full} title="Lazy Loading">
               <ul>
                 <li>
@@ -118,6 +154,12 @@ function React() {
                   automatically
                 </li>
               </ul>
+            </Card>
+            <Card
+              width={half}
+              title="Testing Jest /enzymes /react testing library"
+            >
+              <h5 className="text-danger">in progress</h5>
             </Card>
           </div>
         </div>
