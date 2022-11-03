@@ -123,6 +123,17 @@ function Coding() {
                 src="/assets/images/code/panagram.png"
               />
             </Card>
+            <Card
+              width={half}
+              title="Maximum Frequency in string/array and its count"
+            >
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/Maxfrequency.png"
+              />
+            </Card>
             <Card width={full} title="Output Based javascript question">
               <ul>
                 <li>
