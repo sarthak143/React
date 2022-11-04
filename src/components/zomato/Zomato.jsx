@@ -76,10 +76,10 @@ function Zomato() {
                   className="rounded-circle avatar-lg "
                   alt="profile"
                 />
-                <h4 className="mb-0 text-white mt-2">
+                <h4 className="mb-0 text-primary mt-2">
                   Find the best Restaurants
                 </h4>
-                <p className="text-white font-14">
+                <p className="text-primary font-14">
                   {" "}
                   {city ? city : "Select City"}
                 </p>
