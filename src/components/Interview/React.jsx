@@ -148,8 +148,55 @@ function React() {
             <Card width={half} title="Middleware Thunk">
               <h5 className="text-danger">in progress</h5>
             </Card>
-            <Card width={half} title="Redux">
-              <h5 className="text-danger">in progress</h5>
+            <Card width={full} title="Redux">
+              <div className="row">
+                <div className="col-6">
+                  <ul>
+                    <li>
+                      <h5 className="text-primary">
+                        Create A store and reducer
+                      </h5>
+                      <img
+                        className="img-fit"
+                        alt="infinite curring"
+                        width="100"
+                        src="/assets/images/code/react/reduxStore.png"
+                      />
+                    </li>
+                    <li>
+                      <h5 className="text-primary">
+                        Wrap app inside Provider by importing from react-redux
+                      </h5>
+                      <img
+                        className="img-fit"
+                        alt="infinite curring"
+                        width="100"
+                        src="/assets/images/code/react/reduxApp.png"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <ul>
+                    <li>
+                      <li>
+                        <h5 className="text-primary">
+                          in component use useSelector hook to acces the state
+                        </h5>{" "}
+                        <h5 className="text-primary">
+                          useDispatch is used to dispatch Action with payload
+                        </h5>
+                        <img
+                          className="img-fit"
+                          alt="infinite curring"
+                          width="100"
+                          src="/assets/images/code/react/reduxComponent.png"
+                        />
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </Card>
             <Card width={half} title="Context Api">
               <ol>
