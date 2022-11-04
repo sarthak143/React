@@ -109,7 +109,49 @@ function React() {
               </ul>
             </Card>
             <Card width={full} title="Custom Hooks">
-              <h5 className="text-danger">in progress</h5>
+              <div className="row container">
+                <ul className="col-6">
+                  <li>Memoize React Components</li>
+                  <li>
+                    Use Sprite image to minimise api calls for different icons
+                  </li>
+                  <li>
+                    Use Pure components using React.PureComponent in class
+                    components with custom shouldComponentUpdate method
+                  </li>
+                  <li>
+                    we should React.memo with functional components. this way
+                    renders doesnt run again and again is props passed to it are
+                    not changed instead it will return cached value.
+                  </li>
+                  <li>using lazy loading</li>
+                  <li>
+                    {" "}
+                    Using Web Workers for CPU Extensive Tasks. it run a script
+                    operation in a web application’s background thread, separate
+                    from the main execution thread.
+                  </li>
+                </ul>
+                <ul className="col-6">
+                  <li>
+                    Use React.Fragments to Avoid Additional HTML Element
+                    Wrappers
+                  </li>
+                  <li>Throttling and Debouncing Event Action in JavaScript</li>
+                  <li>
+                    use CDN like Akamai ,cloudflare to deliver static content
+                    from your website as it uses users geographic location. CDN
+                    closest to user is edge server.
+                  </li>
+                  <li>
+                    spliting main chunk in production to smaller chunks using
+                    webpack SplitChunksPlugin. we can consider having two
+                    separate files by separating vendor, or third-party library
+                    code from the application code.
+                  </li>
+                  <li>minify various files </li>
+                </ul>
+              </div>
             </Card>
             <Card width={full} title="Performance improvements">
               <h5 className="text-danger">in progress</h5>
@@ -300,7 +342,40 @@ function React() {
               />
             </Card>
             <Card width={full} title="Lazy Loading">
-              <h5 className="text-danger">in Progress</h5>
+              <div className="row">
+                <ul className="col-6">
+                  <p>
+                    It is a concept or a way to dynamically load a part of code
+                    only when it is required. It is also referred to as code
+                    splitting and data fetching.
+                  </p>
+                  <h5 className="text-primary">Implementation:</h5>{" "}
+                  <li>
+                    <span className="text-primary"> react.lazy()</span>-
+                    function in react that lets you load react components lazily
+                    through code splitting without help from any additional
+                    libraries.
+                  </li>
+                  <li>
+                    <span className="text-primary">Suspense</span>- Suspense -
+                    is used to wrap lazy components. Multiple lazy components
+                    can be wrapped with the suspense component.
+                  </li>
+                  <li>
+                    <span className="text-primary"> fallback</span>- - suspense
+                    take a fallback property to render whle our lazy component
+                    is loading on slow network.
+                  </li>
+                </ul>
+                <ul className="col-6">
+                  <img
+                    className="img-fit"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/react/lazy.png"
+                  />
+                </ul>
+              </div>
             </Card>
             <Card
               width={half}

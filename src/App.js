@@ -13,7 +13,7 @@ import Javascript from './components/Interview/Javascript'
 import Html from './components/Interview/Html'
 import React from './components/Interview/React'
 import Coding from './components/Interview/Coding'
-import Webpack from './components/Interview/Webpack'
+import Misc from './components/Interview/Misc'
 // import Search from './components/search/Search'
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
                 <Route path="code" element={<Coding />}></Route>
                 <Route path="react" element={<React />}></Route>
                 <Route path="html" element={<Html />}></Route>
-                <Route path="Webpack" element={<Webpack />}></Route>
+                <Route path="Misc" element={<Misc />}></Route>
               </Route>
 
 

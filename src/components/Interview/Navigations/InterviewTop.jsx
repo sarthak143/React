@@ -36,10 +36,10 @@ function InterviewTop() {
           REACT
         </NavLink>
         <NavLink
-          to="Webpack"
+          to="Misc"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          Webpack
+          MISC
         </NavLink>
       </div>
     </>
