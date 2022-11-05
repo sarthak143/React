@@ -90,31 +90,58 @@ function Coding() {
             </Card>
             <Card width={full} title="Pollyfils">
               <div className="row">
-                <div className="col-4">
+                <div className="col-6">
                   <h5 className="text-primary">Bind pollyfill</h5>
                   <img
-                    className="img-fit col-4"
+                    className="img-fit"
                     alt="infinite curring"
                     width="100"
                     src="/assets/images/code/bindpoly.png"
                   />
                 </div>
-                <div className="col-4">
+                <div className="col-6">
                   <h5 className="text-primary">Filter pollyfill</h5>
                   <img
-                    className="img-fit col-4"
+                    className="img-fit"
                     alt="infinite curring"
                     width="100"
                     src="/assets/images/code/filterpoly.png"
                   />
                 </div>
-                <div className="col-4">
+                <div className="col-6">
+                  <h5 className="text-primary">Flat pollyfill</h5>
                   <img
-                    className="img-fit col-4"
+                    className="img-fit "
                     alt="infinite curring"
                     width="100"
-                    src="/assets/images/code/search.png"
+                    src="/assets/images/code/flatpoly.png"
                   />
+                </div>
+                <div className="col-12">
+                  <div className="row">
+                    <div className="col-6">
+                      <h5 className="text-primary">
+                        Promise.all pollyfill logic
+                      </h5>
+                      <img
+                        className="img-fit "
+                        alt="infinite curring"
+                        width="100"
+                        src="/assets/images/code/promisallpoly1.png"
+                      />
+                    </div>
+                    <div className="col-6">
+                      <h5 className="text-primary">
+                        Promise.all using invoking
+                      </h5>
+                      <img
+                        className="img-fit "
+                        alt="infinite curring"
+                        width="100"
+                        src="/assets/images/code/promisallpoly2.png"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
