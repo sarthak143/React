@@ -88,6 +88,36 @@ function Coding() {
                 src="/assets/images/code/search.png"
               />
             </Card>
+            <Card width={full} title="Pollyfils">
+              <div className="row">
+                <div className="col-4">
+                  <h5 className="text-primary">Bind pollyfill</h5>
+                  <img
+                    className="img-fit col-4"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/bindpoly.png"
+                  />
+                </div>
+                <div className="col-4">
+                  <h5 className="text-primary">Filter pollyfill</h5>
+                  <img
+                    className="img-fit col-4"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/filterpoly.png"
+                  />
+                </div>
+                <div className="col-4">
+                  <img
+                    className="img-fit col-4"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/search.png"
+                  />
+                </div>
+              </div>
+            </Card>
             <Card
               width={half}
               title="Print active names in ascending order of age from object"
