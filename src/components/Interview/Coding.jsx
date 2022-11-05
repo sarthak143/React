@@ -131,6 +131,14 @@ function Coding() {
                 src="/assets/images/code/findingvowels.png"
               />
             </Card>
+            <Card width={half} title="Captalize a string">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/capital.png"
+              />
+            </Card>
             <Card width={half} title="Panagram">
               <img
                 className="img-fit"
@@ -141,7 +149,8 @@ function Coding() {
             </Card>
             <Card
               width={half}
-              title="Maximum Frequency in string/array and its count"
+              title="Maximum occuring Frequency in string/array and its count , 
+              character map, count of each character"
             >
               <img
                 className="img-fit"
