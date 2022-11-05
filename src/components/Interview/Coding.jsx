@@ -16,6 +16,22 @@ function Coding() {
                 src="/assets/images/code/infinitecurrying.png"
               />
             </Card>
+            <Card width={half} title="Sum Memoization">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/sum.png"
+              />
+            </Card>
+            <Card width={half} title="Generic Memoization">
+              <img
+                className="img-fit"
+                alt="infinite curring"
+                width="100"
+                src="/assets/images/code/genericMemo.png"
+              />
+            </Card>
             <Card width={half} title="Fibonacci Memoization">
               <img
                 className="img-fit"
