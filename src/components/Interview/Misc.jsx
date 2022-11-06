@@ -43,7 +43,51 @@ function Misc() {
                 </div>
               </ul>
             </Card>
-            ;
+            <Card width={full} title="Optimisation of React">
+              <div className="row container">
+                <ul className="col-6">
+                  <li>Memoize React Components</li>
+                  <li>
+                    Use Sprite image to minimise api calls for different icons
+                  </li>
+                  <li>
+                    Use Pure components using React.PureComponent in class
+                    components with custom shouldComponentUpdate method
+                  </li>
+                  <li>
+                    we should React.memo with functional components. this way
+                    renders doesnt run again and again is props passed to it are
+                    not changed instead it will return cached value.
+                  </li>
+                  <li>using lazy loading</li>
+                  <li>
+                    {" "}
+                    Using Web Workers for CPU Extensive Tasks. it run a script
+                    operation in a web application’s background thread, separate
+                    from the main execution thread.
+                  </li>
+                </ul>
+                <ul className="col-6">
+                  <li>
+                    Use React.Fragments to Avoid Additional HTML Element
+                    Wrappers
+                  </li>
+                  <li>Throttling and Debouncing Event Action in JavaScript</li>
+                  <li>
+                    use CDN like Akamai ,cloudflare to deliver static content
+                    from your website as it uses users geographic location. CDN
+                    closest to user is edge server.
+                  </li>
+                  <li>
+                    spliting main chunk in production to smaller chunks using
+                    webpack SplitChunksPlugin. we can consider having two
+                    separate files by separating vendor, or third-party library
+                    code from the application code.
+                  </li>
+                  <li>minify various files </li>
+                </ul>
+              </div>
+            </Card>
             <Card width={full} title="History development approach and Webpack">
               <hr />
               <h5 className="text-primary fw-bold mb-1 ">

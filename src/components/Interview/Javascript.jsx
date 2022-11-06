@@ -299,6 +299,10 @@ function Javascript() {
                 object. It is made with a wrapper around the actual event of the
                 browser.{" "}
               </p>
+              <p className="text-danger">
+                onClick(), onBlur() and onChange() are synthethic events with
+                camelcase
+              </p>
             </Card>{" "}
             <Card width={half} title="event delegation">
               <p>

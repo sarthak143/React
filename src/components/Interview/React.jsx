@@ -108,7 +108,7 @@ function React() {
                 </li>
               </ul>
             </Card>
-            <Card width={full} title="Custom Hooks">
+            <Card width={full} title="Optimisation of React">
               <div className="row container">
                 <ul className="col-6">
                   <li>Memoize React Components</li>
@@ -318,9 +318,89 @@ function React() {
                 </div>
               </div>
             </Card>
-            <Card width={half} title="Reducers">
-              <h5 className="text-danger">in progress</h5>
+            <Card width={full} title="Redux | Middleware | Thunk ">
+              <ul>
+                <li>
+                  <h5 className="text-primary">STORE</h5>A Store Is A Place
+                  Where The Entire State Of Your Application Lists. It Is Like A
+                  Brain Responsible For All Moving Parts In Redux.
+                </li>
+                <li>
+                  <h5 className="text-primary">ACTION</h5>
+                  Actions are JavaScript object that contains information.
+                  Actions are the only source of information for the store. It
+                  basically carries a payload of information from the
+                  application to the store. It only tells us what has happened.
+                  Actions have a type property that they must include as type
+                  property tells what kind of action to perform. Action can also
+                  contain the payload(data field in the action) to describe the
+                  action.
+                </li>
+                <li>
+                  <h5 className="text-primary">REDUCER</h5>
+                  It Determines How The State Will Change. Reducers Read The
+                  Payloads From The Actions And Then Updates The Store Via The
+                  State Accordingly. It Is A Pure Function Which Returns A New
+                  State From The Initial State. It Returns The Previous State As
+                  It Is If No Work Needs To Be Done.
+                  <p className="text-danger">
+                    export default combineReducers({"{"}todos, counter{"}"}})
+                  </p>
+                </li>
+                <li>
+                  <h5 className="text-primary">Middleware</h5>
+                  With a plain basic Redux store, you can only do simple
+                  synchronous updates by dispatching an action. Middleware
+                  extends the store's abilities, and lets you write async logic
+                  that interacts with the store. Middleware only wraps the
+                  store's dispatch function. Technically, anything a middleware
+                  can do, you can do manually by wrapping every dispatch call,
+                  but it's easier to manage this in a single place and define
+                  action transformations on the scale of the whole project.
+                </li>
+                <li>
+                  <h5 className="text-primary">Thunk</h5>
+                  is used to delay the evaluation/calculation of an operation
+                  allows you to write action creators that return a function
+                  instead of an action. The thunk can be used to delay the
+                  dispatch of an action, or to dispatch only if a certain
+                  condition is met. The inner function receives the store
+                  methods dispatch() and getState() as parameters.
+                </li>
+                <li>
+                  <h5 className="text-primary">Redux-devtools</h5>
+                  Redux DevTools is a live-editing time travel environment for
+                  Redux with hot reloading, action replay, and customizable UI.
+                  If you don't want to bother with installing Redux DevTools and
+                  integrating it into your project, consider using Redux
+                  DevTools Extension for Chrome and Firefox.
+                </li>{" "}
+                <li>
+                  <h5 className="text-primary">applyMiddleware().</h5>
+                  It is a store enhancer to add multiple middlewares to Redux.
+                  you can add redux-thunk and logger passing them as arguments
+                  to applyMiddleware()
+                  <p className="text-danger">
+                    let middlewares = [thunk , a , b] <br /> const store =
+                    createStore(Reducer, applyMiddleware(...middlewares ));
+                  </p>
+                </li>
+                <li>
+                  <h5 className="text-primary">compose().</h5>
+                  To apply multiple store enhancers, you may use compose(). If
+                  you use other store enhancers in addition to applyMiddleware,
+                  make sure to put applyMiddleware before them in the
+                  composition chain because the middleware is potentially
+                  asynchronous.
+                  <p className="text-danger">
+                    const store = createStore( reducer,
+                    compose(applyMiddleware(thunk), window.devToolsExtension &&
+                    window.devToolsExtension(),) )
+                  </p>
+                </li>
+              </ul>
             </Card>
+
             <Card width={half} title="Higher order Components">
               <p>
                 A higher-order component (HOC) is an advanced technique in React
@@ -378,10 +458,34 @@ function React() {
               </div>
             </Card>
             <Card
-              width={half}
+              width={full}
               title="Testing Jest /enzymes /react testing library"
             >
-              <h5 className="text-danger">in progress</h5>
+              <h5 className="text-primary">fireEvent-</h5>
+              <p>
+                The fireEvent method allows you to fire events to simulate user
+                actions. fireEvent dispatches exactly the events you tell it to
+                and just those - even if those exact events never had been
+                dispatched in a real interaction in a browser. <br />
+                <span className="text-danger">
+                  fireEvent.click(screen.getByText('any text'))
+                </span>
+              </p>
+              <h5 className="text-primary">userEvent-</h5>
+              <p>
+                userEvent uses the fireEvent. You can consider fireEvent being
+                the low-level api, while userEvent sets a flow of actions.
+              </p>
+
+              <p className="text-danger">
+                <span>import sum from './sum'</span> <br />
+                <span className="mx-2">
+                  test('adds 1 + 2 to equal 3', () => {"{"}
+                </span>{" "}
+                <br />
+                <span className="mx-4">expect(sum(1, 2)).toBe(3))</span> <br />
+                <span className="mx-3">{"}"}</span>
+              </p>
             </Card>
           </div>
         </div>
