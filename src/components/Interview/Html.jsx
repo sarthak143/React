@@ -209,7 +209,7 @@ function Html() {
                 {`element.dataset.name; // "sarthak"`}
               </p>
             </Card>
-            <Card width={half} title="Data attribute">
+            <Card width={half} title="Defer Async">
               <p>
                 When the browser loads HTML and comes across a
                 <span className="text-muted">{"  <script>...</script> "}</span>
