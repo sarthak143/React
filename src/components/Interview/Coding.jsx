@@ -109,6 +109,15 @@ function Coding() {
                   />
                 </div>
                 <div className="col-6">
+                  <h5 className="text-primary">Reverse pollyfill</h5>
+                  <img
+                    className="img-fit"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/reversepoly.png"
+                  />
+                </div>
+                <div className="col-6">
                   <h5 className="text-primary">Flat pollyfill</h5>
                   <img
                     className="img-fit "

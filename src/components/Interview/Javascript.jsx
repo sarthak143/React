@@ -9,6 +9,150 @@ function Javascript() {
       <div className="row">
         <div className="col-lg-12">
           <div className="row">
+            <Card width={full} title="Data Types">
+              <div className="row">
+                <p>
+                  A mutable object is an object whose state can be modified
+                  after it is created.
+                </p>
+                <div className="col-6">
+                  <h5 className="text-primary">Primitive( All Immutable)</h5>
+                  <ul>
+                    <li>
+                      <span className="text-primary">null</span> (type of nul is
+                      "object")
+                    </li>
+                    <li>
+                      {" "}
+                      <span className="text-primary">undefined</span>{" "}
+                      ("undefined" type)
+                    </li>
+                    <li>
+                      <span className="text-primary">String</span>{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      <span className="text-primary">number</span>
+                    </li>
+                    <li>
+                      <span className="text-primary">boolean</span>
+                    </li>
+                    <li>
+                      <span className="text-primary">symbol</span> - it is a
+                      unique and immutable primitive value and may be used as
+                      the key of an Object property{" "}
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  {" "}
+                  <h5 className="text-primary">Reference(Mutable)</h5>
+                  <ul>
+                    <li>
+                      <span className="text-primary">Arrays</span>- Arrays are
+                      used for storing ordered collections.
+                    </li>
+                    <li>
+                      <span className="text-primary">Objects</span>- Objects are
+                      used for storing keyed collections.
+                    </li>
+                    <li>
+                      <span className="text-primary">Function</span>
+                    </li>
+                    <li>
+                      <span className="text-primary">set / Map</span>
+                    </li>
+                    <li>
+                      <span className="text-primary">weakset/weakmap</span>
+                    </li>
+                    <li>
+                      <span className="text-primary">date</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="row">
+                  <div className="col-6">
+                    <span className="text-primary ">Symbol</span>
+                    -Each instance of Symbol is unique , so it can be used to
+                    creat unique id with same name in multiple objects to avoid
+                  </div>
+                  <div className="col-6">
+                    <img
+                      className="col-6 img-fit"
+                      alt="infinite curring"
+                      width="100"
+                      src="/assets/images/code/js/symbol.png"
+                    />
+                  </div>
+                </p>
+                <p className="row">
+                  <div className="col-6">
+                    <span className="text-primary ">Set / Map</span>
+                    <p>
+                      {" "}
+                      Map is a collection of keyed data items, just like an
+                      Object. But the main difference is that Map allows keys of
+                      any type.
+                    </p>
+                    <p>
+                      A Set is a special type collection – “set of values”
+                      (without keys), where each value may occur only once. x
+                    </p>
+                  </div>
+                  <div className="col-6">
+                    <img
+                      className="col-6 img-fit"
+                      alt="infinite curring"
+                      width="100"
+                      src="/assets/images/code/js/.png"
+                    />
+                  </div>
+                </p>
+                <p className="row">
+                  <div className="col-6">
+                    <span className="text-primary ">WeakSet / Weakmap</span>
+                    <p>
+                      javaScript engine keeps a value in memory while it is
+                      “reachable” and can potentially be used.
+                    </p>
+                    <p>
+                      The first difference between Map and WeakMap is that keys
+                      must be objects, not primitive values in weakmap. if we
+                      use an object as the key in it, and there are no other
+                      references to that object – it will be removed from memory
+                      (and from the map) automatically.WeakMap has only the
+                      following methods: weakMap.get(key) weakMap.set(key,
+                      value) weakMap.delete(key) weakMap.has(key)
+                    </p>
+                    <p>
+                      Weakset are similar to Set but we may only add objects to
+                      WeakSet (not primitives). An object exists in the set
+                      while it is reachable from somewhere else. other wise
+                      garbage collected. Like Set, it supports add, has and
+                      delete, but not size, keys() and no iterations.
+                    </p>
+                  </div>
+                  <div className="col-6">
+                    <img
+                      className="col-6 img-fit"
+                      alt="infinite curring"
+                      width="100"
+                      src="/assets/images/code/js/symbol.png"
+                    />
+                  </div>
+                </p>
+                <p>
+                  <span className="text-primary"></span>
+                </p>
+                <p>
+                  <span className="text-primary"></span>
+                </p>
+                <p>
+                  <span className="text-primary"></span>
+                </p>
+              </div>
+            </Card>{" "}
             <Card width={full} title="closures">
               <ul>
                 <li>
