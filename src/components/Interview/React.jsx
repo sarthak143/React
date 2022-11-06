@@ -187,6 +187,41 @@ function React() {
             <Card width={half} title="Pure Components">
               <h5 className="text-danger">in progress</h5>
             </Card>
+            <Card width={half} title="Controlled vs uncontrolled components">
+              In a controlled component, form data is handled by a React
+              component. The alternative is uncontrolled components, where form
+              data is handled by the DOM itself.
+            </Card>
+            <Card width={full} title="Handle error boundaries">
+              <div className="row">
+                <div className="col-6">
+                  {" "}
+                  <h5 className="text-danger">
+                    Using try/catch block in each component
+                  </h5>
+                  <img
+                    className="img-fit"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/react/error.png"
+                  />
+                </div>
+                <div className="col-6">
+                  {" "}
+                  <h5 className="text-danger">
+                    Using React Error Boundary which is only available in class
+                    Component
+                  </h5>
+                  <img
+                    className="img-fit"
+                    alt="infinite curring"
+                    width="100"
+                    src="/assets/images/code/react/error2.png"
+                  />
+                </div>
+              </div>{" "}
+            </Card>
+
             <Card width={full} title="Redux">
               <div className="row">
                 <div className="col-6">
@@ -397,7 +432,6 @@ function React() {
                 </li>
               </ul>
             </Card>
-
             <Card width={half} title="Higher order Components">
               <p>
                 A higher-order component (HOC) is an advanced technique in React
@@ -409,7 +443,6 @@ function React() {
             <Card width={half} title="Class vs Functional Components">
               <h5 className="text-danger">in progress</h5>
             </Card>
-
             <Card width={half} title="PropTypes typechecking | Default props">
               <img
                 className="img-fit"
