@@ -191,7 +191,7 @@ function Html() {
             <Card width={half} title="Browser Api">
               <h5 className="text-danger">in progress</h5>
             </Card>
-            <Card width={half} title="Data attrinute">
+            <Card width={half} title="Data attribute">
               <p>
                 Data-attributes-The data-* attribute is used to store custom
                 data private to the page or application.
@@ -207,6 +207,39 @@ function Html() {
                 </div>`}{" "}
                 <br />
                 {`element.dataset.name; // "sarthak"`}
+              </p>
+            </Card>
+            <Card width={half} title="Data attribute">
+              <p>
+                When the browser loads HTML and comes across a
+                <span className="text-muted">{"  <script>...</script> "}</span>
+                tag, it can't continue building the DOM. It must execute the
+                script first internal or external doesnt matter.it leads to some
+                problems.
+                <ul>
+                  <li>
+                    Scripts can't find DOM elements below them, so they can't
+                    add handlers etc.
+                  </li>
+                  <li>
+                    it make websit load slower as script is blocking page load
+                  </li>
+                </ul>
+              </p>
+              <h5 className="text-primary">Defer (better in most cases)</h5>
+              <p>
+                with defer attribute browser donot wait for the script to load
+                Instead, the browser will continue to process the HTML & build
+                DOM. The script loads “in the background”, and then runs when
+                the DOM is fully built. Scripts with defer always execute when
+                the DOM is ready (but before DOMContentLoaded event). They
+                executed in Document order
+              </p>
+              <h5 className="text-primary">Async</h5>
+              <p>
+                Similar to defer, async scripts load in the background and run
+                when ready.Load-first order. Their document order doesn't matter
+                - which loads first runs first
               </p>
             </Card>
           </div>
