@@ -187,9 +187,6 @@ function React() {
             <Card width={half} title="Pure Components">
               <h5 className="text-danger">in progress</h5>
             </Card>
-            <Card width={half} title="Middleware Thunk">
-              <h5 className="text-danger">in progress</h5>
-            </Card>
             <Card width={full} title="Redux">
               <div className="row">
                 <div className="col-6">
