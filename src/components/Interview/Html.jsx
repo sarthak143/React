@@ -38,7 +38,7 @@ function Html() {
                 </li>
               </ul>
             </Card>
-            <Card width={half} title="Cookies">
+            <Card width={half} title="Cookies More secure">
               <ul>
                 <li>
                   Key-value storage that stores values as string and Up to 4KB
@@ -47,6 +47,16 @@ function Html() {
                 <li>
                   Have expiration time, if no expiration time is given then the
                   cookie will get expired at the end of the browser session.
+                </li>
+                <li>
+                  They reduce manipulation by client-side JavaScript: You can
+                  restrict client-side access by setting the HttpOnly flag. So
+                  they prevent client side scripting attacks
+                </li>
+                <li>
+                  If you need to store data that is accessible for both the
+                  server and the client, use cookies. Otherwise, use local
+                  storage.
                 </li>
                 <li>
                   <span className="text-primary fw-bold mb-1 ">Uses : </span>
@@ -180,6 +190,24 @@ function Html() {
             </Card>
             <Card width={half} title="Browser Api">
               <h5 className="text-danger">in progress</h5>
+            </Card>
+            <Card width={half} title="Data attrinute">
+              <p>
+                Data-attributes-The data-* attribute is used to store custom
+                data private to the page or application.
+              </p>
+              <p>
+                The stored (custom) data can then be used in the page's
+                JavaScript to create a more engaging user experience (without
+                any Ajax calls or server-side database queries).
+              </p>
+              <p className="text-danger">
+                {`<div id='person' data-name="sarthak" data-age="28">
+                  …
+                </div>`}{" "}
+                <br />
+                {`element.dataset.name; // "sarthak"`}
+              </p>
             </Card>
           </div>
         </div>
