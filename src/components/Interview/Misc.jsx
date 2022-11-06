@@ -8,6 +8,42 @@ function Misc() {
       <div className="row">
         <div className="col-lg-12">
           <div className="row">
+            <Card width={full} title="Optimisation Techniques">
+              <ul className="row ">
+                <div className="col-6">
+                  {" "}
+                  <li>Architecture - MicroFrontend for Feature Apps</li>
+                  <li>Server side rendering</li>
+                  <li>Latency - Debouncing/throttling, cdn, Caching</li>
+                  <li>
+                    Memoization , pure components , Web Workers for continously
+                    runing scripts in background
+                  </li>
+                  <li>CSS Optimization using Minifiers , SCSS</li>
+                  <li>Using Lighthouse to check various parameters</li>
+                </div>
+                <div className="col-6">
+                  <li>
+                    Webpack Treeshaking to remove unwanted code and to avoid
+                    code duplication
+                  </li>
+                  <li>Lazy loading for heavy apps</li>
+                  <li>
+                    Event delegation for event on list of multiple child
+                    elements
+                  </li>
+                  <li>
+                    Using Sprite Images and implementing Virtualization/infinite
+                    scroll for long list of data usind React-window npm package
+                  </li>
+                  <li>
+                    Creating HOC for styled/repeatative components, Creating
+                    Custom Hooks for Similar logical piece of code
+                  </li>
+                </div>
+              </ul>
+            </Card>
+            ;
             <Card width={full} title="History development approach and Webpack">
               <hr />
               <h5 className="text-primary fw-bold mb-1 ">
