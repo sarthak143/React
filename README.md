@@ -1,4 +1,4 @@
-Vist https://sarthakwork.netlify.app/ to view this app live
+Vist https://sarthakworks.netlify.app/ to view this app live
 
 Tech stack used:
 React and various packages
