@@ -38,9 +38,7 @@ function Javascript() {
                       <span className="text-primary">boolean</span>
                     </li>
                     <li>
-                      <span className="text-primary">symbol</span> - it is a
-                      unique and immutable primitive value and may be used as
-                      the key of an Object property{" "}
+                      <span className="text-primary">symbol</span>
                     </li>
                   </ul>
                 </div>
@@ -71,11 +69,56 @@ function Javascript() {
                   </ul>
                 </div>
 
-                <p className="row">
+                <div className="row">
                   <div className="col-6">
-                    <span className="text-primary ">Symbol</span>
-                    -Each instance of Symbol is unique , so it can be used to
-                    creat unique id with same name in multiple objects to avoid
+                    <ul>
+                      <li>
+                        <span className="text-primary ">Symbol</span>
+                        -Each instance of Symbol is unique , so it can be used
+                        to create unique id with same name in multiple objects
+                        to avoid
+                      </li>
+                      <li>
+                        <span className="text-primary "> Map</span>
+                        <p>
+                          {" "}
+                          Map is a collection of keyed data items, just like an
+                          Object. But the main difference is that Map allows
+                          keys of any type.
+                        </p>
+                      </li>
+                      <li>
+                        <span className="text-primary "> Set</span>
+                        <p>
+                          A Set is a collection of unique values of any type
+                          (without keys).
+                        </p>
+                      </li>
+                      <li>
+                        <span className="text-primary "> weakSet </span>
+                        <p>
+                          {" "}
+                          Weakset are similar to Set but we may only add objects
+                          to WeakSet (not primitives). An object exists in the
+                          set while it is reachable from somewhere else. other
+                          wise garbage collected. Like Set, it supports add, has
+                          and delete, but not size, keys() and no iterations.
+                        </p>
+                      </li>{" "}
+                      <li>
+                        <span className="text-primary "> Weakmap </span>
+                        <p>
+                          The first difference between Map and WeakMap is that
+                          keys must be objects, not primitive values in weakmap.
+                          if we use an object as the key in it, and there are no
+                          other references to that object – it will be removed
+                          from memory (and from the map) automatically.WeakMap
+                          has only the following methods: weakMap.get(key)
+                          weakMap.set(key, value) weakMap.delete(key)
+                          weakMap.has(key)
+                        </p>
+                      </li>
+                    </ul>
                   </div>
                   <div className="col-6">
                     <img
@@ -85,72 +128,7 @@ function Javascript() {
                       src="/assets/images/code/js/symbol.png"
                     />
                   </div>
-                </p>
-                <p className="row">
-                  <div className="col-6">
-                    <span className="text-primary ">Set / Map</span>
-                    <p>
-                      {" "}
-                      Map is a collection of keyed data items, just like an
-                      Object. But the main difference is that Map allows keys of
-                      any type.
-                    </p>
-                    <p>
-                      A Set is a special type collection – “set of values”
-                      (without keys), where each value may occur only once. x
-                    </p>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      className="col-6 img-fit"
-                      alt="infinite curring"
-                      width="100"
-                      src="/assets/images/code/js/.png"
-                    />
-                  </div>
-                </p>
-                <p className="row">
-                  <div className="col-6">
-                    <span className="text-primary ">WeakSet / Weakmap</span>
-                    <p>
-                      javaScript engine keeps a value in memory while it is
-                      “reachable” and can potentially be used.
-                    </p>
-                    <p>
-                      The first difference between Map and WeakMap is that keys
-                      must be objects, not primitive values in weakmap. if we
-                      use an object as the key in it, and there are no other
-                      references to that object – it will be removed from memory
-                      (and from the map) automatically.WeakMap has only the
-                      following methods: weakMap.get(key) weakMap.set(key,
-                      value) weakMap.delete(key) weakMap.has(key)
-                    </p>
-                    <p>
-                      Weakset are similar to Set but we may only add objects to
-                      WeakSet (not primitives). An object exists in the set
-                      while it is reachable from somewhere else. other wise
-                      garbage collected. Like Set, it supports add, has and
-                      delete, but not size, keys() and no iterations.
-                    </p>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      className="col-6 img-fit"
-                      alt="infinite curring"
-                      width="100"
-                      src="/assets/images/code/js/symbol.png"
-                    />
-                  </div>
-                </p>
-                <p>
-                  <span className="text-primary"></span>
-                </p>
-                <p>
-                  <span className="text-primary"></span>
-                </p>
-                <p>
-                  <span className="text-primary"></span>
-                </p>
+                </div>
               </div>
             </Card>{" "}
             <Card width={full} title="closures">
