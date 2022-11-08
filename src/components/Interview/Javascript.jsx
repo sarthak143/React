@@ -77,16 +77,7 @@ function Javascript() {
                         -Each instance of Symbol is unique , so it can be used
                         to create unique id with same name in multiple objects
                         to avoid
-                      </li>
-                      <li>
-                        <span className="text-primary "> Map</span>
-                        <p>
-                          {" "}
-                          Map is a collection of keyed data items, just like an
-                          Object. But the main difference is that Map allows
-                          keys of any type.
-                        </p>
-                      </li>
+                      </li>{" "}
                       <li>
                         <span className="text-primary "> Set</span>
                         <p>
@@ -95,14 +86,12 @@ function Javascript() {
                         </p>
                       </li>
                       <li>
-                        <span className="text-primary "> weakSet </span>
+                        <span className="text-primary "> Map</span>
                         <p>
                           {" "}
-                          Weakset are similar to Set but we may only add objects
-                          to WeakSet (not primitives). An object exists in the
-                          set while it is reachable from somewhere else. other
-                          wise garbage collected. Like Set, it supports add, has
-                          and delete, but not size, keys() and no iterations.
+                          Map is a collection of keyed data items, just like an
+                          Object. But the main difference is that Map allows
+                          keys of any type.
                         </p>
                       </li>{" "}
                       <li>
@@ -118,6 +107,34 @@ function Javascript() {
                           weakMap.has(key)
                         </p>
                       </li>
+                      <li>
+                        <span className="text-primary "> weakSet </span>
+                        <p>
+                          {" "}
+                          Weakset are similar to Set but we may only add objects
+                          to WeakSet (not primitives). An object exists in the
+                          set while it is reachable from somewhere else. other
+                          wise garbage collected. Like Set, it supports add, has
+                          and delete, but not size, keys() and no iterations.
+                        </p>{" "}
+                        <p>
+                          <span className="text-primary "> Advantage </span>
+                          We need to clean data when we remove its items,
+                          otherwise it will grow in memory indefinitely. Such
+                          cleaning can become a tedious task in complex
+                          architectures.We can avoid it by switching to WeakMap.
+                        </p>
+                        <p>
+                          <span className="text-primary ">
+                            WeakMap and WeakSet{" "}
+                          </span>
+                          are used as “secondary” data structures in addition to
+                          the “primary” object storage. Once the object is
+                          removed from the primary storage, if it is only found
+                          as the key of WeakMap or in a WeakSet, it will be
+                          cleaned up automatically.
+                        </p>
+                      </li>{" "}
                     </ul>
                   </div>
                   <div className="col-6">
