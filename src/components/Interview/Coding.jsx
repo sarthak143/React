@@ -236,14 +236,6 @@ function Coding() {
                 src="/assets/images/code/twosum.png"
               />
             </Card>
-            <Card width={half} title="Dynamic table creation with Dom api">
-              <img
-                className="img-fit"
-                alt="infinite curring"
-                width="100"
-                src="/assets/images/code/table.png"
-              />
-            </Card>
             <Card width={full} title="Output Based javascript question">
               <ul>
                 <li>
