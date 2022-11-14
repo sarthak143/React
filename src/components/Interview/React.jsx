@@ -153,7 +153,7 @@ function React() {
                 </ul>
               </div>
             </Card>
-            <Card width={full} title="Performance improvements">
+            <Card width={full} title="Virtualization scroll react window">
               <h5 className="text-danger">in progress</h5>
             </Card>
             <Card width={full} title="Reconciliation">
