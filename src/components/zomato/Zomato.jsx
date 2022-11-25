@@ -158,8 +158,8 @@ function Zomato() {
                       <button
                         onClick={(e) => {
                           e.preventDefault();
-                          console.log(city);
-                          console.log(searchText);
+                          // console.log(city);
+                          // console.log(searchText);
                           getResult(city, searchText);
                         }}
                         className="input-group-text btn btn-dark"

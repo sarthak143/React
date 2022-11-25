@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Folder({ handleInsertNode, explorer }) {
-  console.log(explorer);
+  //   console.log(explorer);
   const [expand, setExpand] = useState(false);
   const [showInput, setShowInput] = useState({
     visible: false,

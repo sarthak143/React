@@ -4,6 +4,7 @@ import Card from "../shared/Card";
 import Api from "./projects/Api";
 import Debounce from "./projects/Debounce";
 import Main from "./projects/Explorer/main";
+import Rating from "./projects/Rating";
 import Search from "./projects/Search";
 import Slideshow from "./projects/Slideshow";
 import Stopwatch from "./projects/Stopwatch";
@@ -55,6 +56,12 @@ function Random() {
                 </Card>
                 <Card width={half} title="Vs code like folder structure">
                   <Main />
+                </Card>
+                <Card width={half} title="Virtualization">
+                  in progress
+                </Card>
+                <Card width={half} title="Rating stars">
+                  <Rating />
                 </Card>
               </div>{" "}
             </div>
