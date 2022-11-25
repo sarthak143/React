@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 function Debounce() {
+  const [deb, setDeb] = useState(0);
+  const [thr, setThr] = useState(0);
+
   function debounce(cb, delay) {
     let timer;
     return (...args) => {
@@ -27,16 +30,23 @@ function Debounce() {
     <>
       <button
         className="btn btn-primary m-1"
-        onClick={debounce((e) => console.log("debounce"), 1000)}
+        onClick={debounce((e) => setDeb(deb + 1), 1000)}
       >
         Click Me Debounce
       </button>
       <button
         className="btn btn-primary m-1"
-        onClick={throttle((e) => console.log("throttle"), 1000)}
+        onClick={throttle((e) => console.log("throttle"), 2000)}
       >
         Click Me Throttle
       </button>
+
+      <div className="mx-1">
+        <div className="row">
+          <div className="col-lg-4">Debounce: {deb} call sent</div>
+          <div className="col-lg-4">Throttle: check console</div>
+        </div>
+      </div>
     </>
   );
 }

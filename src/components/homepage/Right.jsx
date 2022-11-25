@@ -75,12 +75,25 @@ function Right() {
                   <div className="timeline-item">
                     <i className="mdi mdi-circle bg-info-lighten text-info timeline-icon" />
                     <div className="timeline-item-info">
+                      <h5 className="mt-0 mb-1">Senior technical consultant</h5>
+                      <p className="font-14">
+                        Adobe
+                        <span className="ms-2 font-12">
+                          Year: 2022 - till now
+                        </span>
+                      </p>
+                      <p className="text-muted mt-2 mb-0 pb-3">
+                        working with various clients for Front end solutions
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-item">
+                    <i className="mdi mdi-circle bg-primary-lighten text-primary timeline-icon" />
+                    <div className="timeline-item-info">
                       <h5 className="mt-0 mb-1">Associate technology L2</h5>
                       <p className="font-14">
-                        American MNC's , Publicis Sapient
-                        <span className="ms-2 font-12">
-                          Year: 2021 - till now
-                        </span>
+                        Publicis Sapient
+                        <span className="ms-2 font-12">Year: 2021 - 2022</span>
                       </p>
                       <p className="text-muted mt-2 mb-0 pb-3">
                         Here I worked with two Clients on Frontend part of
@@ -94,40 +107,26 @@ function Right() {
                     </div>
                   </div>
                   <div className="timeline-item">
-                    <i className="mdi mdi-circle bg-primary-lighten text-primary timeline-icon" />
+                    <i className="mdi mdi-circle bg-info-lighten text-info timeline-icon" />
                     <div className="timeline-item-info">
                       <h5 className="mt-0 mb-1">
                         Application development analyst
                       </h5>
                       <p className="font-14">
                         Accenture
-                        <span className="ms-2 font-12">Year: 2019 - 21</span>
+                        <span className="ms-2 font-12">Year: 2017 - 2021</span>
                       </p>
-                      <p className="text-muted mt-2 mb-0 pb-3">
+                      <p className="text-muted mt-2 mb-0 pb-2">
                         I was part of 5-member team which was responsible for
                         developing multiple websites within stringent time
                         frame. I analyzed mockups from Zeplin or PSD and realize
                         it into working website and Communicate with other
-                        developers across teams in UI development.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="timeline-item">
-                    <i className="mdi mdi-circle bg-info-lighten text-info timeline-icon" />
-                    <div className="timeline-item-info">
-                      <h5 className="mt-0 mb-1">
-                        Application development associate
-                      </h5>
-                      <p className="font-14">
-                        Accenture
-                        <span className="ms-2 font-12">Year: 2017 - 19</span>
-                      </p>
-                      <p className="text-muted mt-2 mb-0 pb-2">
-                        I contributed to cross functional teams as a fed
-                        developer here & developed quoting pages for insurance
-                        websites. Worked together with Back End team to design
-                        and develop functional, performing, and complete APIs
-                        that work with existing company software and products.
+                        developers across teams in UI development. I contributed
+                        to cross functional teams as a fed developer here &
+                        developed quoting pages for insurance websites. Worked
+                        together with Back End team to design and develop
+                        functional, performing, and complete APIs that work with
+                        existing company software and products.
                       </p>
                     </div>
                   </div>
