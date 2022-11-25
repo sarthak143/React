@@ -11,23 +11,35 @@ function Todo() {
   }
 
   function deleteme(i) {
-    setTodo(todo.filter((j) => j != i));
+    setTodo(todo.filter((j) => j !== i));
   }
   return (
     <>
-      <input
-        onChange={(e) => setText(e.target.value)}
-        onKeyPress={(e) => {
-          if (e.key === "Enter") {
-            addTask();
-          }
-        }}
-      />
-      <button onClick={addTask}>add</button>
-      <ul>
+      <div className="input-group mb-2 " style={{ width: "300px" }}>
+        <input
+          className="form-control"
+          placeholder="type.."
+          onChange={(e) => setText(e.target.value)}
+          onKeyPress={(e) => {
+            if (e.key === "Enter") {
+              addTask();
+            }
+          }}
+        />
+        <button className="btn btn-primary" onClick={addTask}>
+          Add
+        </button>
+      </div>
+
+      <ul className="list-group" style={{ width: "300px" }}>
         {todo.map((i, index) => (
-          <li key={index} onClick={() => deleteme(i)}>
+          <li
+            className="list-group-item d-flex justify-content-between align-items-center"
+            key={index}
+            onClick={() => deleteme(i)}
+          >
             {i}
+            <span class="badge bg-primary rounded-pill">14</span>
           </li>
         ))}
       </ul>

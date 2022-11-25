@@ -10,7 +10,12 @@ function Search() {
   }
   return (
     <>
-      <input onChange={search} />
+      <input
+        onChange={search}
+        style={{ width: "270px" }}
+        className="form-control"
+        placeholder="type to search.."
+      />
 
       <ul>
         {data.map((i) => (

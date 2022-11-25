@@ -31,12 +31,12 @@ export default function Api() {
         <p>{i.first_name}</p>
       ))} */}
 
-      <table>
-        <thead>
+      <table className="table table-centered mb-0">
+        <thead className="table-dark">
           <tr>
-            <th>name</th>
-            <th>email</th>
-            <th>id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Id</th>
           </tr>
         </thead>
 

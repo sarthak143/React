@@ -37,10 +37,17 @@ function Stopwatch() {
       <p>
         {hh}:{mm}:{ss}
       </p>
-
-      <button onClick={startHandler}>Start</button>
-      <button onClick={pauseHandler}>Pause</button>
-      <button onClick={resetHandler}>Reset</button>
+      <div className="button-list">
+        <button className="btn btn-primary" onClick={startHandler}>
+          Start
+        </button>
+        <button className="btn btn-success" onClick={pauseHandler}>
+          Pause
+        </button>
+        <button className="btn btn-danger" onClick={resetHandler}>
+          Reset
+        </button>
+      </div>
     </>
   );
 }

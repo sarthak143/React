@@ -25,10 +25,16 @@ function Debounce() {
 
   return (
     <>
-      <button onClick={debounce((e) => console.log("debounce"), 1000)}>
+      <button
+        className="btn btn-primary m-1"
+        onClick={debounce((e) => console.log("debounce"), 1000)}
+      >
         Click Me Debounce
       </button>
-      <button onClick={throttle((e) => console.log("throttle"), 1000)}>
+      <button
+        className="btn btn-primary m-1"
+        onClick={throttle((e) => console.log("throttle"), 1000)}
+      >
         Click Me Throttle
       </button>
     </>
