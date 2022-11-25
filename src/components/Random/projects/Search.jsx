@@ -9,10 +9,9 @@ function Search() {
     setData(fruits.filter((i) => i.indexOf(e.target.value) > -1));
   }
   return (
-    <>
+    <div className="col-lg-8">
       <input
         onChange={search}
-        style={{ width: "270px" }}
         className="form-control"
         placeholder="type to search.."
       />
@@ -22,7 +21,7 @@ function Search() {
           <li key={i}>{i}</li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

@@ -14,8 +14,8 @@ function Todo() {
     setTodo(todo.filter((j) => j !== i));
   }
   return (
-    <>
-      <div className="input-group mb-2 " style={{ width: "300px" }}>
+    <div className="col-lg-8">
+      <div className="input-group mb-2 ">
         <input
           className="form-control"
           placeholder="type.."
@@ -31,7 +31,7 @@ function Todo() {
         </button>
       </div>
 
-      <ul className="list-group" style={{ width: "300px" }}>
+      <ul className="list-group">
         {todo.map((i, index) => (
           <li
             className="text-capitalize list-group-item d-flex justify-content-between align-items-center"
@@ -45,7 +45,7 @@ function Todo() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

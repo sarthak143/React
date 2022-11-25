@@ -26,11 +26,7 @@ export default function Api() {
     getUser();
   }, []);
   return (
-    <div>
-      {/* {user.map((i) => (
-        <p>{i.first_name}</p>
-      ))} */}
-
+    <div style={{ overflowX: "scroll" }}>
       <table className="table table-centered mb-0">
         <thead className="table-dark">
           <tr>
