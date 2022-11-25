@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "../shared/Card";
 import Api from "./projects/Api";
 import Debounce from "./projects/Debounce";
+import Main from "./projects/Explorer/main";
 import Search from "./projects/Search";
 import Slideshow from "./projects/Slideshow";
 import Stopwatch from "./projects/Stopwatch";
@@ -51,6 +52,9 @@ function Random() {
                 </Card>{" "}
                 <Card width={half} title="Carousel">
                   <Slideshow />
+                </Card>
+                <Card width={half} title="Vs code like folder structure">
+                  <Main />
                 </Card>
               </div>{" "}
             </div>
