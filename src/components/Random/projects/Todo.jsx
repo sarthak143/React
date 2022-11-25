@@ -34,12 +34,14 @@ function Todo() {
       <ul className="list-group" style={{ width: "300px" }}>
         {todo.map((i, index) => (
           <li
-            className="list-group-item d-flex justify-content-between align-items-center"
+            className="text-capitalize list-group-item d-flex justify-content-between align-items-center"
             key={index}
-            onClick={() => deleteme(i)}
           >
             {i}
-            <span class="badge bg-primary rounded-pill">14</span>
+            <span
+              onClick={() => deleteme(i)}
+              className="pointer link-danger font-20 mdi mdi-delete"
+            ></span>
           </li>
         ))}
       </ul>

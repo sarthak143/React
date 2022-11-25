@@ -19,7 +19,7 @@ function Search() {
 
       <ul>
         {data.map((i) => (
-          <li>{i}</li>
+          <li key={i}>{i}</li>
         ))}
       </ul>
     </>
