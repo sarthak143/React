@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/Slideshow.css";
-const colors = ["red", "green", "blue"];
+const colors = ["#727cf5", "#0acf97", "#fa5c7c"];
 
 function Slideshow() {
   const [index, setIndex] = useState(0);
