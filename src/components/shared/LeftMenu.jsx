@@ -33,6 +33,12 @@ function LeftMenu() {
               <span> Kanban Board </span>
             </Link>
           </li>
+          <li className="side-nav-item">
+            <Link to="Random" className="side-nav-link">
+              <i className=" mdi mdi-book-variant-multiple" />
+              <span> Small projects </span>
+            </Link>
+          </li>
           {/* <li className="side-nav-item">
             <Link to="Interview" className="side-nav-link">
               <i className="uil-search" />

@@ -14,6 +14,7 @@ import Html from './components/Interview/Html'
 import React from './components/Interview/React'
 import Coding from './components/Interview/Coding'
 import Misc from './components/Interview/Misc'
+import Random from './components/Random/Random'
 // import Search from './components/search/Search'
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
               <Route
                 path="/Kanban"
                 element={<KanbanHome />}
+              /><Route
+                path="/Random"
+                element={<Random />}
               />
               <Route
                 path="Interview"
