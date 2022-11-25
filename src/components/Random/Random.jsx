@@ -4,6 +4,7 @@ import Card from "../shared/Card";
 import Api from "./projects/Api";
 import Debounce from "./projects/Debounce";
 import Search from "./projects/Search";
+import Slideshow from "./projects/Slideshow";
 import Stopwatch from "./projects/Stopwatch";
 import Todo from "./projects/Todo";
 function Random() {
@@ -47,6 +48,9 @@ function Random() {
                 </Card>
                 <Card width={half} title="Search">
                   <Search />
+                </Card>{" "}
+                <Card width={half} title="Carousel">
+                  <Slideshow />
                 </Card>
               </div>{" "}
             </div>
