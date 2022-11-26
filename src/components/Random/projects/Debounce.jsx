@@ -28,23 +28,29 @@ function Debounce() {
 
   return (
     <>
-      <button
-        className="btn btn-primary m-1"
-        onClick={debounce((e) => setDeb(deb + 1), 1000)}
-      >
-        Click Me Debounce
-      </button>
-      <button
-        className="btn btn-primary m-1"
-        onClick={throttle((e) => console.log("throttle"), 2000)}
-      >
-        Click Me Throttle
-      </button>
+      <div className="row">
+        <div className="col-lg-5">
+          <button
+            className="btn btn-primary m-1"
+            onClick={debounce((e) => setDeb(deb + 1), 1000)}
+          >
+            Click Me Debounce
+          </button>
+        </div>
+        <div className="col-lg-5">
+          <button
+            className="btn btn-primary m-1"
+            onClick={throttle((e) => console.log("throttle"), 2000)}
+          >
+            Click Me Throttle
+          </button>
+        </div>
+      </div>
 
       <div className="mx-1">
         <div className="row">
-          <div className="col-lg-4">Debounce: {deb} call sent</div>
-          <div className="col-lg-4">Throttle: check console</div>
+          <div className="col-lg-5">Debounce: {deb} call sent</div>
+          <div className="col-lg-5">Throttle: check console</div>
         </div>
       </div>
     </>
