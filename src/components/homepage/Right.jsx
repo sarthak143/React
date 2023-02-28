@@ -79,11 +79,11 @@ function Right() {
                       <p className="font-14">
                         Adobe
                         <span className="ms-2 font-12">
-                          Year: 2022 - till now
+                          Year: 2022 - Present
                         </span>
                       </p>
                       <p className="text-muted mt-2 mb-0 pb-3">
-                        working with various clients for Front end solutions
+                        Working on cutting edge front end technologies.
                       </p>
                     </div>
                   </div>

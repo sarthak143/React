@@ -5,6 +5,7 @@ function Left() {
   const GAME = "https://sarthakworks.github.io/2048/";
   const EXTENSION =
     "https://chrome.google.com/webstore/detail/dark-mode-kali/chbdmdapmeflnkgibpgbdcblndooljff?hl=en-GB";
+    const ANDROID = "https://play.google.com/store/apps/details?id=com.sarthakworks.zerokati";
   return (
     <>
       <div className="card">
@@ -88,11 +89,11 @@ function Left() {
             <div className="p-2">
               <div className="row align-items-center">
                 <div className="col-auto">
-                  <div className="avatar-sm">
-                    <span className="avatar-title bg-warning-lighten text-dark font-15 rounded">
-                      2048
-                    </span>
-                  </div>
+                  <img
+                    src="/assets/images/2048.jpg"
+                    className="avatar-sm rounded object-fit"
+                    alt="file-"
+                  />
                 </div>
                 <div className="col ps-0">
                   <a
@@ -148,6 +149,45 @@ function Left() {
                   {/* Button */}
                   <a
                     href={EXTENSION}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-link btn-lg text-muted"
+                  >
+                    <i className="uil uil-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card mb-1 shadow-none border">
+            <div className="p-2">
+              <div className="row align-items-center">
+                <div className="col-auto">
+                  <img
+                    src="/assets/images/tictactoe.png"
+                    className="avatar-sm rounded object-fit"
+                    alt="file-"
+                  />
+                </div>
+                <div className="col ps-0">
+                  <a
+                    href={ANDROID}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-muted fw-bold"
+                  >
+                    Android Game
+                  </a>
+                  <p className="mb-0">
+                    <span className="badge bg-success">
+                      5 <i className="mdi mdi-star"></i>
+                    </span>
+                  </p>
+                </div>
+                <div className="col-auto">
+                  {/* Button */}
+                  <a
+                    href={ANDROID}
                     target="_blank"
                     rel="noreferrer"
                     className="btn btn-link btn-lg text-muted"
