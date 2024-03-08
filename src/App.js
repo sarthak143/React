@@ -44,7 +44,7 @@ function App() {
               {/*<Route
                 path="Interview"
                 element={<Interview />}
-              >*/}
+              >
                 <Route path="" element={<Javascript />}></Route>
                 <Route path="javascript" element={<Javascript />}></Route>
                 <Route path="code" element={<Coding />}></Route>
