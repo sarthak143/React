@@ -41,10 +41,10 @@ function App() {
                 path="/Random"
                 element={<Random />}
               />
-              <Route
+              {/*<Route
                 path="Interview"
                 element={<Interview />}
-              >
+              >*/}
                 <Route path="" element={<Javascript />}></Route>
                 <Route path="javascript" element={<Javascript />}></Route>
                 <Route path="code" element={<Coding />}></Route>
