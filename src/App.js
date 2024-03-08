@@ -41,7 +41,7 @@ function App() {
                 path="/Random"
                 element={<Random />}
               />
-              {/*<Route
+              <Route
                 path="Interview"
                 element={<Interview />}
               >
