@@ -30,8 +30,8 @@ function Left() {
                   </Link>
                   <p className="mb-0">2.3 MB</p>
                 </div>
-                <div className="col-auto">
-                  {/* Button */}
+               {/* <div className="col-auto">
+                  {/* Button 
                   <Link
                     to={Resume}
                     target="_blank"
@@ -40,7 +40,7 @@ function Left() {
                   >
                     <i className="dripicons-download" />
                   </Link>
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>
