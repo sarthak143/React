@@ -11,7 +11,7 @@ function Left() {
       <div className="card">
         <div className="card-body">
           <h5 className="card-title mb-3">Files</h5>
-          <div className="card mb-1 shadow-none border">
+          {/* <div className="card mb-1 shadow-none border">
             <div className="p-2">
               <div className="row align-items-center">
                 <div className="col-auto">
@@ -30,7 +30,7 @@ function Left() {
                   </Link>
                   <p className="mb-0">2.3 MB</p>
                 </div>
-               {/* <div className="col-auto">
+               <div className="col-auto">
                   {/* Button 
                   <Link
                     to={Resume}
@@ -40,10 +40,10 @@ function Left() {
                   >
                     <i className="dripicons-download" />
                   </Link>
-                </div>*/}
+                </div>
               </div>
             </div>
-          </div>
+          </div>*/}
           <div className="card mb-1 shadow-none border">
             <div className="p-2">
               <div className="row align-items-center">
